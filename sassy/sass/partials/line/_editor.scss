@@ -1,0 +1,78 @@
+
+/* display paragraphs symbol and keep inline in editor */
+span span {
+	display:inline;
+}
+span.EN span:before, span.FN span:before {
+	content: "\00B6";
+}
+.NFIRST:before {
+	content: "[1st\00B6]";
+}
+.NFIRST:after {
+	content: "[E1st\00B6]";
+}
+.NTEXT:before {
+	content: "[\00B6]";
+}
+.NTEXT:after {
+	content: "[E\00B6]";
+}
+/* wysiwyg controls */
+
+
+em {
+	font-family: SAT_italic;
+	padding: 0;
+	margin: 0;
+}
+strong {
+	font-family: SAT_semibold;
+}
+.left {
+	text-align: left;
+}
+.right {
+	text-align: right;
+}
+.center {
+	text-align: center;
+}
+.full{
+	text-align: justify;
+}
+.FIGTOP{
+	float:top;
+}
+.FIGBOT{
+	float:bottom;
+}
+.BGLET {
+letter-spacing:.5em;
+}
+.SMLET {
+letter-spacing:-.05em;
+}
+.SMWRD {
+word-spacing:-.2em;
+}
+.BGWRD {
+word-spacing:1em;
+}
+.SMLN {
+line-height:80%
+}
+.BGLN {
+line-height:120%
+}
+
+.indent2 {
+
+	text-indent:4em;
+}
+.indent3 {
+	text-indent:6em;
+}
+.no_indent {
+	text-indent: 0;
+}

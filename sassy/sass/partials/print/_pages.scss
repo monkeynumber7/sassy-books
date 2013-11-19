@@ -1,0 +1,110 @@
+/* CSS Paged Media Module */
+body {
+  widows: $doc-widows;
+  orphans: $doc-orphans;
+}
+
+
+@page {
+  size: $doc-trim-width $doc-trim-height;
+  margin: $doc-margin-top $doc-margin-right $doc-margin-bottom;
+  @top {
+    margin-top: $doc-rh-margin-top;
+  }
+}
+
+@page {
+  bleed: $doc-bleed;
+  marks: cross crop;
+  prince-trim: $doc-outside-trim;
+}
+
+@page {
+  counter-reset: footnote;
+  @footnotes {
+    border-top: solid black thin;
+    prince-border-clip: 2in;
+    padding-top: 8pt;
+    footnote-style-position: inside;
+  }
+}
+/* contents-matter is all sub section after the contents(toc) */
+/*left pages */
+@include section-running-head("contents-matter","left") {
+      content: counter(page, lower-roman) " \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 " string(Chaptertitle);
+    }
+
+/*right pages */
+@include section-running-head("contents-matter","right") {
+      content: string(Chaptertitle) " \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 " counter(page, lower-roman);
+    }
+
+/*first page of each front matter sub section */
+@include section-running-head-first("contents-matter") {
+	    content: counter(page, lower-roman);
+	}
+
+@include section-running-head-blank("contents-matter") {}
+
+/* define front matter as contents-matter */
+#front-matter > div:not(#title):not(#half-title):not(#copyright):not(#epigraph):not(#dedication) {
+  page: contents-matter;
+  prince-doc-group: start;
+}
+
+/* chap is all chapters */
+/*chapters first page headers and footers */
+/*left pages */
+@include section-running-head("chap","left") {
+      content: counter(page) " \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 " string(Booktitle);
+    }
+
+/*right pages */
+@include section-running-head("chap","right") {
+      content: string(Chaptertitle) " \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 " counter(page);
+    }
+
+@include section-running-head-first("chap") {
+	  content: counter(page);
+	}
+
+@include section-running-head-blank("chap") {}
+
+/* define chapter pages */
+#body-matter .chapter {
+  page: chap;
+  prince-doc-group: start;
+}
+
+/* part is the part divider */
+@include section-running-head-first("part") {
+	  content: "";
+	}
+/*define part */
+#body-matter .part {
+  page: part;
+  prince-doc-group: start;
+}
+
+/*define rear page groups */
+/*left pages */
+@include section-running-head("rear","left") {
+      content: counter(page) " \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 " string(Chaptertitle);
+    }
+
+/*right pages */
+@include section-running-head("rear","right") {
+      content: string(Chaptertitle) " \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 " counter(page);
+    }
+
+@include section-running-head-first("rear") {
+	  content: counter(page);
+	}
+
+@include section-running-head-blank("rear") {}
+
+
+#rear-matter > div {
+  page: rear;
+  prince-doc-group: start;
+}

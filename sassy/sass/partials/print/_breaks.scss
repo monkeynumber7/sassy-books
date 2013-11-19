@@ -1,0 +1,9 @@
+/*start sections and chapters on right page */
+#front-matter > div, #body-matter > div, #rear-matter > div {
+  doc-break-before: right;
+}
+
+/* copyright on left or right page just make sure it breaks before */
+div#copyright {
+  doc-break-before: always;
+}

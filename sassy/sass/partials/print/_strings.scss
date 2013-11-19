@@ -1,0 +1,12 @@
+/* set Booktitle, Authortitle and Chaptertitle variables */
+#title h1 {
+  string-set: Booktitle content();
+}
+
+div > h2 {
+  string-set: Chaptertitle content();
+}
+
+#title h4 {
+  string-set: Authorname content();
+}

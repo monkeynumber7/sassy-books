@@ -1,0 +1,45 @@
+
+// ${scope}-{feature}-{property}-{value}-{modifier} 
+// font set up for running heads through out the book 
+$doc-rh-font-family: SAT_italic, italic;
+$doc-rh-font-size: small;
+$doc-rh-margin-top: 0.5in;
+@mixin doc-rh-font {
+  font-family: $doc-rh-font-family;
+  font-size: $doc-rh-font-size;
+}
+// left or right running head mixins 
+@mixin section-running-head($pagename,$align) {
+  @page $pagename: $align {
+  @top {
+    @content;
+	text-align: $align;
+	@include doc-rh-font; 
+    }
+  }
+}
+// first running head mixins
+@mixin section-running-head-first($pagename) {
+  @page $pagename: first {
+  margin-bottom: $section-firstdoc-margin-bottom;
+  @bottom {
+    @content;
+	@include doc-rh-font; 
+    }
+  @top {
+    content: ""; 
+    }
+  }
+}
+// blank running head mixins 
+@mixin section-running-head-blank($pagename) {
+  @page $pagename: blank {
+  @bottom {
+    content: "";
+  }
+
+  @top {
+    content: "";
+  }
+  }
+}

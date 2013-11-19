@@ -1,0 +1,126 @@
+
+
+#contents {
+	margin: 0;
+}
+#contents .toc_bd {
+	margin:0;
+	padding: 0;
+}
+#contents .toc_fm {
+	margin:0;
+	padding: 0;
+}
+#contents .toc_rm {
+	margin:20pt 0 0 0;
+	padding: 0;
+}
+li.TOCFM {
+	padding-right: 16pt;
+	font-size:1em;
+	line-height:1.4em;
+	margin-left: 28pt;
+	margin-bottom: 4pt;
+	text-indent:0em;
+	}
+li.TOCRM {
+	padding-right: 16pt;
+	font-size:1em;
+	line-height:1.4em;
+	margin-left: 28pt;
+	margin-bottom: 4pt;
+	text-indent:0em;
+	}
+li.chap.TOCCHAP {
+	padding-right: 16pt;
+	font-size:1em;
+	line-height:1.4em;
+	margin-left: 28pt;
+	margin-bottom: 4pt;
+	text-indent:-40pt;
+}
+li.part.TOCPART {
+	padding-top:0;
+	text-indent: 0;
+	font-size:1em;
+	line-height:1.4em;
+	margin:20pt 0 4pt 0;
+	text-indent:0;
+}
+#contents ul { 
+	text-align:left;
+	list-style-type: none;
+	margin-top:2em;
+}
+.TOCPART span.num { 
+	display: block;
+	font-weight: bold;
+	text-align: left;
+	margin: 2em 0 0 0;
+	padding-right: 4pt;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	font-size: 1em;
+}
+.TOCCHAP span.num { 
+	display: inline-block;
+	width:32pt;
+	font-weight: bold;
+	text-align: right;
+	margin: 0;
+	padding-right: 4pt;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	font-size: 1em;
+}
+.TOCCHAP {
+	-epub-hyphens:none;
+	-webkit-hyphens:none;
+	font-size:1em;
+	font-style:normal;
+	line-height:1.167;
+	margin-right:30%;
+	text-align:left;
+	text-decoration:none;
+	text-indent:0px;
+}
+.TOCPART a {
+	-webkit-hyphens:none;
+	text-transform: uppercase;
+	letter-spacing: .15em;
+}
+.TOCCHAP a {
+	-webkit-hyphens:none;
+}
+.TOCFM a {
+	-webkit-hyphens:none;
+	font-style: italic;
+}
+.TOCRM a {
+	-webkit-hyphens:none;
+	font-style: italic;
+}
+/* counter reset for TOC--------------
+ul.toc_bd_list {
+	counter-reset: LiChapterNo;
+}leader
+#contents .TOCCHAP  a:after, #contents .toc_rm_list  a:after { 
+	content: " " target-counter(attr(href, url), page);
+}
+#contents .toc_fm_list  a:after { 
+	content: " " target-counter(attr(href, url), page, lower-roman);
+}
+.TOCNUM, #contents li .num { 
+	display: inline-block;
+	width:32pt;
+	font-family: SAT_semibold;
+	text-align: right;
+	margin: 0;
+	padding-right: 4pt;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	font-size: 11pt;
+	counter-increment: LiChapterNo;
+	content: " " counter(LiChapterNo);
+}*/
+/* content: leader(".") " " across the page */

@@ -1,0 +1,60 @@
+/*-----------------foot/end notes-----------------------*/
+.FN {
+	font-size: 10pt;
+	line-height: 12pt;
+	color: red;
+	margin: 0;
+	padding: 0;
+	text-indent: 0;
+}
+
+.EN {
+	font-size: 10pt;
+	line-height: 12pt;
+	color: blue;
+	text-align: justify;
+	text-indent: 12pt;
+	text-decoration: none;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.NFIRST {
+	text-indent: 0;
+}
+.NTEXT {
+	text-indent: 12pt;
+}
+.note {
+	font-size: 9pt;
+	padding: 0;
+	line-height: 10pt;
+	margin:0;
+	vertical-align:super;
+}
+/* end note page */
+.ENNUM {
+	float: left;
+	font-size: 10pt;
+	text-indent: 12pt;
+	margin-left: 0pt;
+	line-height: 11.75pt;
+}
+#end-notes ul {
+	font-size: 10pt;
+	line-height: 12pt;
+	margin:0;
+	padding: 0;
+}
+.ENITEM {
+	clear:both;
+	text-align: justify;
+	text-indent: 0;
+}
+.ENITEM .NFIRST  {
+	text-indent: 0;
+}
+.ENITEM span > span  {
+	text-indent: 15pt;
+	margin-right:20pt;
+}

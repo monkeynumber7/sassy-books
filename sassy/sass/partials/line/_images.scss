@@ -1,0 +1,21 @@
+/* images */
+img { border:none;display:block;margin:0 auto; max-width: 100%; max-height: 100%; }
+.FIGTOP {margin-bottom: $base-line-height-dub; }
+.CAP {
+	padding-top:$base-padding;
+	font-size: $caption-font-size;
+	line-height: $caption-line-height;
+	-webkit-hyphens:none;
+	hyphens:none;
+	text-align: left;
+}
+#title img {
+	width: 35%;
+}
+
+.FIGTOP{
+	float:top;
+}
+.FIGBOT{
+	float:bottom;
+}

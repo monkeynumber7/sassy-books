@@ -1,0 +1,10 @@
+
+@mixin base-font-heading{
+	-webkit-hyphens:none;
+	hyphens:none;
+	font-family:$base-font-family, serif;
+	letter-spacing: .15em;
+	text-transform:uppercase;
+	text-align: center;
+
+}

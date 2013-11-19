@@ -1,0 +1,17 @@
+// ${scope}-{feature}-{property}-{value}-{modifier} 
+$doc-widows: 2;
+$doc-orphans: 2;
+$doc-trim-width: 6in;
+$doc-trim-height: 9in;
+$doc-margin-top: 1in;
+$doc-margin-right: 0.75;
+$doc-margin-bottom: 0.5in;
+$doc-margin-left: 0.75;
+$doc-bleed: 10pt;
+$doc-outside-trim: 1in;
+
+$section-header-margin-top: $doc-trim-height * .22;
+$section-firstdoc-margin-bottom: 1in;
+$fn-symbols: counter(footnote, symbols("*", "**", "***", "****", "\2020", "\2021", "\00A7", "1", "2"));
+
+

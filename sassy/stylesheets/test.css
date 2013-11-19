@@ -1,0 +1,367 @@
+/* <link href="/stylesheets/base.css" rel="stylesheet" type="text/css" />  */
+/* line 17, ../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 33, ../sass/partials/line/_base.scss */
+body {
+  font-family: SAT_regular, sarif;
+  font-size: 11.75pt;
+  line-height: 16pt;
+  text-indent: 15pt;
+  text-align: justify;
+  margin: 0;
+}
+
+/* title page title */
+/* line 44, ../sass/partials/line/_base.scss */
+#title h1 {
+  -webkit-hyphens: none;
+  hyphens: none;
+  font-family: SAT_regular;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  text-align: center;
+  color: pink;
+  font-size: 11.75pt;
+  line-height: 16pt;
+  margin-top: 11.75pt;
+  font-size: 31.96pt;
+  /* 32pt */
+  line-height: 34pt;
+  /* 34pt */
+  margin-top: 31.96pt;
+  /* 32pt; */
+}
+
+/* title page subtitle */
+/* line 51, ../sass/partials/line/_base.scss */
+#title h3 {
+  -webkit-hyphens: none;
+  hyphens: none;
+  font-family: SAT_regular;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  text-align: center;
+  color: inherit;
+  font-size: 1809.5pt;
+  line-height: 2464pt;
+  margin-top: 1809.5pt;
+  letter-spacing: .1em;
+}
+
+/* title page author */
+/* line 57, ../sass/partials/line/_base.scss */
+#title h4 {
+  -webkit-hyphens: none;
+  hyphens: none;
+  font-family: SAT_regular;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  text-align: center;
+  color: inherit;
+  font-size: 11.75pt;
+  line-height: 16pt;
+  margin-top: 11.75pt;
+  margin-top: 72pt;
+  font-size: 18pt;
+  text-indent: 0;
+}
+
+/* half title page title */
+/* line 64, ../sass/partials/line/_base.scss */
+#half-title h1 {
+  -webkit-hyphens: none;
+  hyphens: none;
+  font-family: SAT_regular;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  text-align: center;
+  color: inherit;
+  font-size: 11.75pt;
+  line-height: 16pt;
+  margin-top: 11.75pt;
+  font-size: 26pt;
+  line-height: 28pt;
+  margin-top: 48pt;
+}
+
+/* chapter title */
+/* line 71, ../sass/partials/line/_base.scss */
+#body-matter h2 {
+  -webkit-hyphens: none;
+  hyphens: none;
+  font-family: SAT_regular;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  text-align: center;
+  color: inherit;
+  font-size: 11.75pt;
+  line-height: 16pt;
+  margin-top: 11.75pt;
+  font-size: 18pt;
+  margin-bottom: 72pt;
+  letter-spacing: .1em;
+}
+/* line 76, ../sass/partials/line/_base.scss */
+#body-matter h2 + #body-matter h3 {
+  margin-top: 36pt;
+}
+/* line 80, ../sass/partials/line/_base.scss */
+#body-matter h2 + p {
+  text-indent: 0;
+}
+
+/* chapter subtitle */
+/* line 87, ../sass/partials/line/_base.scss */
+#body-matter h3 {
+  -webkit-hyphens: none;
+  hyphens: none;
+  font-family: SAT_regular;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  text-align: center;
+  color: inherit;
+  font-size: 11.75pt;
+  line-height: 16pt;
+  margin-top: 11.75pt;
+  margin-bottom: 36pt;
+  font-size: 11pt;
+}
+/* line 91, ../sass/partials/line/_base.scss */
+#body-matter h3 + p {
+  text-indent: 0;
+}
+
+/* chapter number */
+/* line 97, ../sass/partials/line/_base.scss */
+.CHAPNUM {
+  text-align: center;
+  font-size: 16pt;
+  line-height: 16pt;
+  font-family: SAT_semibold;
+  margin-top: 48pt;
+  margin-bottom: 48pt;
+  text-transform: none;
+}
+
+/* part num */
+/* line 107, ../sass/partials/line/_base.scss */
+.PARTNUM {
+  hyphens: none;
+  font-family: SAT_semibold;
+  text-align: center;
+  font-size: 16pt;
+  line-height: 16pt;
+  margin: 80pt 0 48pt 0;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
+/* part title */
+/* line 118, ../sass/partials/line/_base.scss */
+.PARTTTL {
+  -webkit-hyphens: none;
+  font-family: SAT_regular;
+  font-size: 30pt;
+  line-height: 34pt;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+}
+
+/* front matter title */
+/* line 127, ../sass/partials/line/_base.scss */
+#front-matter h2 {
+  text-align: center;
+  font-size: 16pt;
+  line-height: 16pt;
+  margin: 80pt 0 64pt 0;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
+/* rear matter title */
+/* line 136, ../sass/partials/line/_base.scss */
+#rear-matter h2 {
+  text-align: center;
+  font-size: 16pt;
+  line-height: 16pt;
+  margin: 80pt 0 64pt 0;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
+/* a */
+/* line 146, ../sass/partials/line/_base.scss */
+h4 {
+  font-family: SAT_regular, serif;
+  -epub-hyphens: none;
+  -webkit-hyphens: none;
+  font-size: 11pt;
+  font-style: normal;
+  font-weight: normal;
+  margin: 24pt 0 8pt;
+  margin-bottom: 8pt;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 24pt;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  text-decoration: none;
+  text-indent: 0px;
+}
+/* line 163, ../sass/partials/line/_base.scss */
+h4 + ol {
+  margin-top: 0;
+}
+/* line 166, ../sass/partials/line/_base.scss */
+h4 + ul {
+  margin-top: 0;
+}
+/* line 169, ../sass/partials/line/_base.scss */
+h4 + .B {
+  margin-top: 0;
+}
+/* line 172, ../sass/partials/line/_base.scss */
+h4 + p {
+  text-indent: 0;
+}
+
+/* b */
+/* line 177, ../sass/partials/line/_base.scss */
+h5 {
+  font-family: SAT_italic, serif;
+  font-size: 12.25pt;
+  font-style: normal;
+  font-weight: normal;
+  margin: 26pt 0 6pt 0;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0px;
+}
+/* line 186, ../sass/partials/line/_base.scss */
+h5 + ol {
+  margin-top: 0;
+}
+/* line 189, ../sass/partials/line/_base.scss */
+h5 + ul {
+  margin-top: 0;
+}
+/* line 192, ../sass/partials/line/_base.scss */
+h5 + .C {
+  margin-top: 0;
+}
+/* line 195, ../sass/partials/line/_base.scss */
+h5 + p {
+  text-indent: 0;
+}
+
+/*h6*/
+/* line 200, ../sass/partials/line/_base.scss */
+.C {
+  font-family: SAT_regular, serif;
+  font-size: 10.75pt;
+  margin: 14pt 0 1pt 0;
+}
+/* line 204, ../sass/partials/line/_base.scss */
+.C + ol {
+  margin-top: 0;
+}
+/* line 207, ../sass/partials/line/_base.scss */
+.C + ul {
+  margin-top: 0;
+}
+/* line 211, ../sass/partials/line/_base.scss */
+.C + p {
+  text-indent: 0;
+}
+
+/* line 215, ../sass/partials/line/_base.scss */
+.CRUNIN {
+  font-family: SAT_regular, serif;
+  font-style: normal;
+  margin: 16pt 0 0 0;
+  text-align: justify;
+  text-decoration: none;
+  text-indent: 0px;
+}
+
+/* line 223, ../sass/partials/line/_base.scss */
+.runin-C {
+  padding-right: .75em;
+  font-weight: bold;
+}
+
+/*.RMA  */
+/* line 231, ../sass/partials/line/_base.scss */
+#rear-matter h3 {
+  font-family: SAT_semibold;
+  font-size: 9.5pt;
+  line-height: 12pt;
+  text-transform: uppercase;
+  margin: 20pt 0 4pt 0;
+  letter-spacing: .1em;
+  text-indent: 0;
+}

@@ -1,0 +1,127 @@
+
+
+/* RATS styles */
+
+.BM-TXT {
+	font-family:$base-font-family;
+}
+/*remove indent for fist paragrap of all sub sections */
+
+.BMFIRST, #body-matter > div p:first-of-type {
+
+	font-family:$base-font-family;
+	text-indent:0;
+
+}
+
+.CPYINFO, #copyright p {
+	-webkit-hyphens:none;
+	color:Black;
+	font-family:SAT_regular, serif;
+	text-indent:0;
+	font-size:9pt;
+	line-height: 11pt;
+	text-align:left;
+	margin-left:.5in;
+}
+
+.SIG {
+	text-align: right;
+	font-family: SAT_italic;
+}
+.SIDE {
+	color: gray;
+	line-height: 14pt;
+	float: left;
+	width: 150px;
+	text-align: left;
+	padding: 1em 1em 0 0;
+	font-family: SAT_semibold;
+	font-size: 11pt;
+}
+.EXT {
+	font-family:SAT_regular, serif;
+	font-size:11pt;
+	line-height: 16pt;
+	font-style:normal;
+	margin-bottom:16pt;
+	margin-left:15pt;
+	margin-right:15pt;
+	margin-top:16pt;
+	text-align:justify;
+	text-decoration:none;
+	text-indent:0px;
+}
+.EXT1st {
+	font-family:SAT_regular, serif;
+	font-size:11pt;
+	line-height: 16pt;
+	font-style:normal;
+	margin-bottom:0px;
+	margin-left:15pt;
+	margin-right:15pt;
+	margin-top:16pt;
+	text-align:justify;
+	text-decoration:none;
+	text-indent:0px;
+}
+.EXTMd {
+	font-family:SAT_regular, serif;
+	font-size:11pt;
+	line-height: 16pt;
+	font-style:normal;
+	margin-bottom:0px;
+	margin-left:15pt;
+	margin-right:15pt;
+	margin-top:0pt;
+	text-align:justify;
+	text-decoration:none;
+	text-indent:12pt;
+}
+.EXTLs {
+	font-family:SAT_regular, serif;
+	font-style:normal;
+	font-size:11pt;
+	line-height: 16pt;
+	margin-bottom:16pt;
+	margin-left:15pt;
+	margin-right:15pt;
+	margin-top:0pt;
+	text-align:justify;
+	text-decoration:none;
+	text-indent:12pt;
+}
+
+.DED {
+
+	hyphens:none;
+	font-family:SAT_italic;
+	font-size:1em;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:1.2;
+	margin:0 0 0 0;
+	text-align:center;
+	text-decoration:none;
+	text-indent:0;
+}
+/*--------------Rear Matter and Notes-----------------*/
+
+
+.RMFIRST {
+	font-size: 10pt;
+	line-height: 12pt;
+	text-indent: 0;
+}
+.RMTXT {
+	font-size: 10pt;
+	line-height: 12pt;
+	text-indent: 12pt;
+}	
+.BIB {
+	font-size: 10pt;
+	line-height: 12pt;
+	margin-left:12pt;
+	text-indent: -12pt;
+}
