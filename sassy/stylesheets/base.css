@@ -1,6 +1,6 @@
 /* <link href="/stylesheets/base.css" rel="stylesheet" type="text/css" />  */
 /* three dot text break "\a0" is a utf-8 space "\2022" is a dot */
-/* line 2, ../sass/partials/line/_breaks.scss */
+/* line 2, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_breaks.scss */
 .TXBDINGBATS {
   text-align: center;
   line-height: 16pt;
@@ -8,7 +8,7 @@
   content: "\2022 \a0 \a0 \a0 \a0 \a0 \2022 \a0 \a0 \a0 \a0 \a0 \2022 ";
 }
 
-/* line 8, ../sass/partials/line/_breaks.scss */
+/* line 8, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_breaks.scss */
 *[class*='TXB'] {
   text-align: center;
   line-height: 16pt;
@@ -16,7 +16,7 @@
 }
 
 /* images */
-/* line 2, ../sass/partials/line/_images.scss */
+/* line 2, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_images.scss */
 img {
   border: none;
   display: block;
@@ -25,12 +25,12 @@ img {
   max-height: 100%;
 }
 
-/* line 3, ../sass/partials/line/_images.scss */
+/* line 3, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_images.scss */
 .FIGTOP {
   margin-bottom: 32pt;
 }
 
-/* line 4, ../sass/partials/line/_images.scss */
+/* line 4, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_images.scss */
 .CAP {
   padding-top: 6pt;
   font-size: 9.9875pt;
@@ -40,35 +40,35 @@ img {
   text-align: left;
 }
 
-/* line 12, ../sass/partials/line/_images.scss */
+/* line 12, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_images.scss */
 #title img {
   width: 35%;
 }
 
-/* line 16, ../sass/partials/line/_images.scss */
+/* line 16, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_images.scss */
 .FIGTOP {
   float: top;
 }
 
-/* line 19, ../sass/partials/line/_images.scss */
+/* line 19, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_images.scss */
 .FIGBOT {
   float: bottom;
 }
 
 /* no underlines in links */
-/* line 3, ../sass/partials/line/_links.scss */
+/* line 3, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_links.scss */
 a:link {
   color: inherit;
   text-decoration: none;
 }
 
-/* line 7, ../sass/partials/line/_links.scss */
+/* line 7, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_links.scss */
 a:visited {
   text-decoration: none;
   color: black;
 }
 
-/* line 8, ../sass/partials/line/_links.scss */
+/* line 8, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_links.scss */
 a:hover {
   color: black;
 }
@@ -79,7 +79,7 @@ font-variant:small-caps;
 }
 */
 /* Big cap */
-/* line 7, ../sass/partials/line/_initials.scss */
+/* line 7, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_initials.scss */
 #body-matter .chapter > p:first-of-type:first-letter {
   font-family: SAT_regular;
   float: left;
@@ -93,30 +93,30 @@ font-variant:small-caps;
   /*-11.75pt*/
 }
 
-/* line 3, ../sass/partials/line/_toc.scss */
+/* line 3, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_toc.scss */
 #contents {
   margin: 0;
 }
 
-/* line 6, ../sass/partials/line/_toc.scss */
+/* line 6, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_toc.scss */
 #contents .toc_bd {
   margin: 0;
   padding: 0;
 }
 
-/* line 10, ../sass/partials/line/_toc.scss */
+/* line 10, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_toc.scss */
 #contents .toc_fm {
   margin: 0;
   padding: 0;
 }
 
-/* line 14, ../sass/partials/line/_toc.scss */
+/* line 14, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_toc.scss */
 #contents .toc_rm {
   margin: 20pt 0 0 0;
   padding: 0;
 }
 
-/* line 18, ../sass/partials/line/_toc.scss */
+/* line 18, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_toc.scss */
 li.TOCFM {
   padding-right: 16pt;
   font-size: 1em;
@@ -126,7 +126,7 @@ li.TOCFM {
   text-indent: 0em;
 }
 
-/* line 26, ../sass/partials/line/_toc.scss */
+/* line 26, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_toc.scss */
 li.TOCRM {
   padding-right: 16pt;
   font-size: 1em;
@@ -136,7 +136,7 @@ li.TOCRM {
   text-indent: 0em;
 }
 
-/* line 34, ../sass/partials/line/_toc.scss */
+/* line 34, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_toc.scss */
 li.chap.TOCCHAP {
   padding-right: 16pt;
   font-size: 1em;
@@ -146,7 +146,7 @@ li.chap.TOCCHAP {
   text-indent: -40pt;
 }
 
-/* line 42, ../sass/partials/line/_toc.scss */
+/* line 42, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_toc.scss */
 li.part.TOCPART {
   padding-top: 0;
   text-indent: 0;
@@ -156,14 +156,14 @@ li.part.TOCPART {
   text-indent: 0;
 }
 
-/* line 50, ../sass/partials/line/_toc.scss */
+/* line 50, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_toc.scss */
 #contents ul {
   text-align: left;
   list-style-type: none;
   margin-top: 2em;
 }
 
-/* line 55, ../sass/partials/line/_toc.scss */
+/* line 55, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_toc.scss */
 .TOCPART span.num {
   display: block;
   font-weight: bold;
@@ -175,7 +175,7 @@ li.part.TOCPART {
   font-size: 1em;
 }
 
-/* line 65, ../sass/partials/line/_toc.scss */
+/* line 65, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_toc.scss */
 .TOCCHAP span.num {
   display: inline-block;
   width: 32pt;
@@ -188,7 +188,7 @@ li.part.TOCPART {
   font-size: 1em;
 }
 
-/* line 76, ../sass/partials/line/_toc.scss */
+/* line 76, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_toc.scss */
 .TOCCHAP {
   -epub-hyphens: none;
   -webkit-hyphens: none;
@@ -201,25 +201,25 @@ li.part.TOCPART {
   text-indent: 0px;
 }
 
-/* line 87, ../sass/partials/line/_toc.scss */
+/* line 87, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_toc.scss */
 .TOCPART a {
   -webkit-hyphens: none;
   text-transform: uppercase;
   letter-spacing: .15em;
 }
 
-/* line 92, ../sass/partials/line/_toc.scss */
+/* line 92, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_toc.scss */
 .TOCCHAP a {
   -webkit-hyphens: none;
 }
 
-/* line 95, ../sass/partials/line/_toc.scss */
+/* line 95, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_toc.scss */
 .TOCFM a {
   -webkit-hyphens: none;
   font-style: italic;
 }
 
-/* line 99, ../sass/partials/line/_toc.scss */
+/* line 99, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_toc.scss */
 .TOCRM a {
   -webkit-hyphens: none;
   font-style: italic;
@@ -249,7 +249,7 @@ ul.toc_bd_list {
 	content: " " counter(LiChapterNo);
 }*/
 /* content: leader(".") " " across the page */
-/* line 1, ../sass/partials/line/_headings.scss */
+/* line 1, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_headings.scss */
 .TTLPGTTL, #title h1 {
   -webkit-hyphens: none;
   hyphens: none;
@@ -265,7 +265,7 @@ ul.toc_bd_list {
   /* 32pt; */
 }
 
-/* line 7, ../sass/partials/line/_headings.scss */
+/* line 7, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_headings.scss */
 .TTLPGAU, #title h4, .TTLPGAU p {
   -webkit-hyphens: none;
   hyphens: none;
@@ -278,7 +278,7 @@ ul.toc_bd_list {
   text-indent: 0;
 }
 
-/* line 13, ../sass/partials/line/_headings.scss */
+/* line 13, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_headings.scss */
 .TTLPGSUB, #title h3 {
   -webkit-hyphens: none;
   hyphens: none;
@@ -293,7 +293,7 @@ ul.toc_bd_list {
   letter-spacing: .1em;
 }
 
-/* line 21, ../sass/partials/line/_headings.scss */
+/* line 21, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_headings.scss */
 .HTTLPGTTL, #half-title h1 {
   -webkit-hyphens: none;
   hyphens: none;
@@ -306,7 +306,7 @@ ul.toc_bd_list {
   margin-top: 48pt;
 }
 
-/* line 29, ../sass/partials/line/_headings.scss */
+/* line 29, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_headings.scss */
 .CHAPTTL, #body-matter h2 {
   -webkit-hyphens: none;
   hyphens: none;
@@ -318,16 +318,16 @@ ul.toc_bd_list {
   margin-bottom: 72pt;
   letter-spacing: .1em;
 }
-/* line 34, ../sass/partials/line/_headings.scss */
+/* line 34, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_headings.scss */
 .CHAPTTL + .CHAPSUB, #body-matter h2 + .CHAPSUB {
   margin-top: 36pt;
 }
-/* line 37, ../sass/partials/line/_headings.scss */
+/* line 37, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_headings.scss */
 .CHAPTTL + #body-matter h3, #body-matter h2 + #body-matter h3 {
   margin-top: 36pt;
 }
 
-/* line 41, ../sass/partials/line/_headings.scss */
+/* line 41, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_headings.scss */
 .CHAPSUB, #body-matter h3 {
   -webkit-hyphens: none;
   hyphens: none;
@@ -339,7 +339,7 @@ ul.toc_bd_list {
   font-size: 11pt;
 }
 
-/* line 46, ../sass/partials/line/_headings.scss */
+/* line 46, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_headings.scss */
 .CHAPNUM, .chapter h6 {
   text-align: center;
   font-size: 16pt;
@@ -350,7 +350,7 @@ ul.toc_bd_list {
   text-transform: none;
 }
 
-/* line 55, ../sass/partials/line/_headings.scss */
+/* line 55, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_headings.scss */
 .FMTTL {
   text-align: center;
   font-size: 16pt;
@@ -360,7 +360,7 @@ ul.toc_bd_list {
   letter-spacing: .1em;
 }
 
-/* line 63, ../sass/partials/line/_headings.scss */
+/* line 63, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_headings.scss */
 .RMTTL {
   text-align: center;
   font-size: 16pt;
@@ -370,7 +370,7 @@ ul.toc_bd_list {
   letter-spacing: .1em;
 }
 
-/* line 72, ../sass/partials/line/_headings.scss */
+/* line 72, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_headings.scss */
 .A {
   font-family: SAT_regular, serif;
   -epub-hyphens: none;
@@ -388,24 +388,24 @@ ul.toc_bd_list {
   text-decoration: none;
   text-indent: 0px;
 }
-/* line 88, ../sass/partials/line/_headings.scss */
+/* line 88, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_headings.scss */
 .A + ol {
   margin-top: 0;
 }
-/* line 91, ../sass/partials/line/_headings.scss */
+/* line 91, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_headings.scss */
 .A + ul {
   margin-top: 0;
 }
-/* line 94, ../sass/partials/line/_headings.scss */
+/* line 94, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_headings.scss */
 .A + .B {
   margin-top: 0;
 }
-/* line 97, ../sass/partials/line/_headings.scss */
+/* line 97, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_headings.scss */
 .A + p {
   text-indent: 0;
 }
 
-/* line 102, ../sass/partials/line/_headings.scss */
+/* line 102, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_headings.scss */
 .B {
   font-family: SAT_italic, serif;
   font-size: 12.25pt;
@@ -416,24 +416,24 @@ ul.toc_bd_list {
   text-decoration: none;
   text-indent: 0px;
 }
-/* line 111, ../sass/partials/line/_headings.scss */
+/* line 111, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_headings.scss */
 .B + ol {
   margin-top: 0;
 }
-/* line 114, ../sass/partials/line/_headings.scss */
+/* line 114, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_headings.scss */
 .B + ul {
   margin-top: 0;
 }
-/* line 117, ../sass/partials/line/_headings.scss */
+/* line 117, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_headings.scss */
 .B + .C {
   margin-top: 0;
 }
-/* line 120, ../sass/partials/line/_headings.scss */
+/* line 120, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_headings.scss */
 .B + p {
   text-indent: 0;
 }
 
-/* line 125, ../sass/partials/line/_headings.scss */
+/* line 125, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_headings.scss */
 .CRUNIN {
   font-family: SAT_regular, serif;
   font-style: normal;
@@ -443,32 +443,32 @@ ul.toc_bd_list {
   text-indent: 0px;
 }
 
-/* line 133, ../sass/partials/line/_headings.scss */
+/* line 133, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_headings.scss */
 .runin-C {
   padding-right: .75em;
   font-weight: bold;
 }
 
-/* line 137, ../sass/partials/line/_headings.scss */
+/* line 137, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_headings.scss */
 .C {
   font-family: SAT_regular, serif;
   font-size: 10.75pt;
   margin: 14pt 0 1pt 0;
 }
-/* line 141, ../sass/partials/line/_headings.scss */
+/* line 141, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_headings.scss */
 .C + ol {
   margin-top: 0;
 }
-/* line 144, ../sass/partials/line/_headings.scss */
+/* line 144, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_headings.scss */
 .C + ul {
   margin-top: 0;
 }
-/* line 148, ../sass/partials/line/_headings.scss */
+/* line 148, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_headings.scss */
 .C + p {
   text-indent: 0;
 }
 
-/* line 153, ../sass/partials/line/_headings.scss */
+/* line 153, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_headings.scss */
 .PARTNUM, #body-matter .part h6 {
   hyphens: none;
   font-family: SAT_semibold;
@@ -480,7 +480,7 @@ ul.toc_bd_list {
   letter-spacing: .1em;
 }
 
-/* line 163, ../sass/partials/line/_headings.scss */
+/* line 163, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_headings.scss */
 .PARTTTL, #body-matter .part h2 {
   -webkit-hyphens: none;
   font-family: SAT_regular;
@@ -490,7 +490,7 @@ ul.toc_bd_list {
   text-transform: uppercase;
 }
 
-/* line 172, ../sass/partials/line/_headings.scss */
+/* line 172, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_headings.scss */
 .RMA {
   font-family: SAT_semibold;
   font-size: 9.5pt;
@@ -502,7 +502,7 @@ ul.toc_bd_list {
 }
 
 /*-----------------foot/end notes-----------------------*/
-/* line 2, ../sass/partials/line/_notes.scss */
+/* line 2, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_notes.scss */
 .FN {
   font-size: 10pt;
   line-height: 12pt;
@@ -512,7 +512,7 @@ ul.toc_bd_list {
   text-indent: 0;
 }
 
-/* line 11, ../sass/partials/line/_notes.scss */
+/* line 11, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_notes.scss */
 .EN {
   font-size: 10pt;
   line-height: 12pt;
@@ -525,17 +525,17 @@ ul.toc_bd_list {
   padding: 0;
 }
 
-/* line 22, ../sass/partials/line/_notes.scss */
+/* line 22, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_notes.scss */
 .NFIRST {
   text-indent: 0;
 }
 
-/* line 25, ../sass/partials/line/_notes.scss */
+/* line 25, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_notes.scss */
 .NTEXT {
   text-indent: 12pt;
 }
 
-/* line 28, ../sass/partials/line/_notes.scss */
+/* line 28, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_notes.scss */
 .note {
   font-size: 9pt;
   padding: 0;
@@ -545,7 +545,7 @@ ul.toc_bd_list {
 }
 
 /* end note page */
-/* line 36, ../sass/partials/line/_notes.scss */
+/* line 36, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_notes.scss */
 .ENNUM {
   float: left;
   font-size: 10pt;
@@ -554,7 +554,7 @@ ul.toc_bd_list {
   line-height: 11.75pt;
 }
 
-/* line 43, ../sass/partials/line/_notes.scss */
+/* line 43, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_notes.scss */
 #end-notes ul {
   font-size: 10pt;
   line-height: 12pt;
@@ -562,38 +562,38 @@ ul.toc_bd_list {
   padding: 0;
 }
 
-/* line 49, ../sass/partials/line/_notes.scss */
+/* line 49, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_notes.scss */
 .ENITEM {
   clear: both;
   text-align: justify;
   text-indent: 0;
 }
 
-/* line 54, ../sass/partials/line/_notes.scss */
+/* line 54, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_notes.scss */
 .ENITEM .NFIRST {
   text-indent: 0;
 }
 
-/* line 57, ../sass/partials/line/_notes.scss */
+/* line 57, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_notes.scss */
 .ENITEM span > span {
   text-indent: 15pt;
   margin-right: 20pt;
 }
 
 /* RATS styles */
-/* line 5, ../sass/partials/line/_paras.scss */
+/* line 5, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_paras.scss */
 .BM-TXT {
   font-family: SAT_regular;
 }
 
 /*remove indent for fist paragrap of all sub sections */
-/* line 10, ../sass/partials/line/_paras.scss */
+/* line 10, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_paras.scss */
 .BMFIRST, #body-matter > div p:first-of-type {
   font-family: SAT_regular;
   text-indent: 0;
 }
 
-/* line 17, ../sass/partials/line/_paras.scss */
+/* line 17, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_paras.scss */
 .CPYINFO, #copyright p {
   -webkit-hyphens: none;
   color: Black;
@@ -605,13 +605,13 @@ ul.toc_bd_list {
   margin-left: .5in;
 }
 
-/* line 28, ../sass/partials/line/_paras.scss */
+/* line 28, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_paras.scss */
 .SIG {
   text-align: right;
   font-family: SAT_italic;
 }
 
-/* line 32, ../sass/partials/line/_paras.scss */
+/* line 32, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_paras.scss */
 .SIDE {
   color: gray;
   line-height: 14pt;
@@ -623,7 +623,7 @@ ul.toc_bd_list {
   font-size: 11pt;
 }
 
-/* line 42, ../sass/partials/line/_paras.scss */
+/* line 42, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_paras.scss */
 .EXT {
   font-family: SAT_regular, serif;
   font-size: 11pt;
@@ -638,7 +638,7 @@ ul.toc_bd_list {
   text-indent: 0px;
 }
 
-/* line 55, ../sass/partials/line/_paras.scss */
+/* line 55, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_paras.scss */
 .EXT1st {
   font-family: SAT_regular, serif;
   font-size: 11pt;
@@ -653,7 +653,7 @@ ul.toc_bd_list {
   text-indent: 0px;
 }
 
-/* line 68, ../sass/partials/line/_paras.scss */
+/* line 68, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_paras.scss */
 .EXTMd {
   font-family: SAT_regular, serif;
   font-size: 11pt;
@@ -668,7 +668,7 @@ ul.toc_bd_list {
   text-indent: 12pt;
 }
 
-/* line 81, ../sass/partials/line/_paras.scss */
+/* line 81, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_paras.scss */
 .EXTLs {
   font-family: SAT_regular, serif;
   font-style: normal;
@@ -683,7 +683,7 @@ ul.toc_bd_list {
   text-indent: 12pt;
 }
 
-/* line 95, ../sass/partials/line/_paras.scss */
+/* line 95, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_paras.scss */
 .DED {
   hyphens: none;
   font-family: SAT_italic;
@@ -699,21 +699,21 @@ ul.toc_bd_list {
 }
 
 /*--------------Rear Matter and Notes-----------------*/
-/* line 112, ../sass/partials/line/_paras.scss */
+/* line 112, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_paras.scss */
 .RMFIRST {
   font-size: 10pt;
   line-height: 12pt;
   text-indent: 0;
 }
 
-/* line 117, ../sass/partials/line/_paras.scss */
+/* line 117, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_paras.scss */
 .RMTXT {
   font-size: 10pt;
   line-height: 12pt;
   text-indent: 12pt;
 }
 
-/* line 122, ../sass/partials/line/_paras.scss */
+/* line 122, C:/Users/DekanBrown/Documents/GitHub/sassy-books/sassy/sass/partials/line/_paras.scss */
 .BIB {
   font-size: 10pt;
   line-height: 12pt;
