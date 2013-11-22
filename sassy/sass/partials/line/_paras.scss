@@ -1,13 +1,11 @@
 
 
-/* RATS styles */
-
 .BM-TXT {
 	font-family:$base-font-family;
 }
-/*remove indent for fist paragrap of all sub sections */
+/*remove indent for fist paragraph of all sub sections */
 
-.BMFIRST, #body-matter > div p:first-of-type {
+.BMFIRST {
 
 	font-family:$base-font-family;
 	text-indent:0;
@@ -15,19 +13,20 @@
 }
 
 .CPYINFO, #copyright p {
+
 	-webkit-hyphens:none;
 	color:Black;
 	font-family:SAT_regular, serif;
 	text-indent:0;
-	font-size:9pt;
-	line-height: 11pt;
+	font-size:$base-font-size * .75;
+	line-height: $base-line-height * .75;
 	text-align:left;
-	margin-left:.5in;
+	margin-left:16pt;
 }
 
 .SIG {
 	text-align: right;
-	font-family: SAT_italic;
+	font-family: SAT_italic, italic;
 }
 .SIDE {
 	color: gray;
@@ -40,55 +39,19 @@
 	font-size: 11pt;
 }
 .EXT {
-	font-family:SAT_regular, serif;
-	font-size:11pt;
-	line-height: 16pt;
-	font-style:normal;
-	margin-bottom:16pt;
-	margin-left:15pt;
-	margin-right:15pt;
-	margin-top:16pt;
-	text-align:justify;
-	text-decoration:none;
-	text-indent:0px;
+	@include base-text-para-ext;
 }
 .EXT1st {
-	font-family:SAT_regular, serif;
-	font-size:11pt;
-	line-height: 16pt;
-	font-style:normal;
+	@include base-text-para-ext;
 	margin-bottom:0px;
-	margin-left:15pt;
-	margin-right:15pt;
-	margin-top:16pt;
-	text-align:justify;
-	text-decoration:none;
-	text-indent:0px;
 }
 .EXTMd {
-	font-family:SAT_regular, serif;
-	font-size:11pt;
-	line-height: 16pt;
-	font-style:normal;
+	@include base-text-para-ext;
 	margin-bottom:0px;
-	margin-left:15pt;
-	margin-right:15pt;
-	margin-top:0pt;
-	text-align:justify;
-	text-decoration:none;
 	text-indent:12pt;
 }
 .EXTLs {
-	font-family:SAT_regular, serif;
-	font-style:normal;
-	font-size:11pt;
-	line-height: 16pt;
-	margin-bottom:16pt;
-	margin-left:15pt;
-	margin-right:15pt;
-	margin-top:0pt;
-	text-align:justify;
-	text-decoration:none;
+	@include base-text-para-ext;
 	text-indent:12pt;
 }
 
@@ -106,7 +69,6 @@
 	text-decoration:none;
 	text-indent:0;
 }
-/*--------------Rear Matter and Notes-----------------*/
 
 
 .RMFIRST {

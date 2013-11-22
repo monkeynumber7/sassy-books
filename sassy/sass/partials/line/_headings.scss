@@ -1,180 +1,201 @@
-.TTLPGTTL, #title h1 {
-	@include base-font-heading;
-	font-size:$base-font-size * 2.72; /* 32pt */
-	line-height: $base-line-height * 2.125; /* 34pt */
-	margin-top: $base-font-size * 2.72; /* 32pt; */
-}
-.TTLPGAU, #title h4, .TTLPGAU p {
-	@include base-font-heading;
-	margin-top:72pt;
-	font-size:18pt;
-	text-indent:0;
-}
-.TTLPGSUB, #title h3 {
-	@include base-font-heading;
-	font-family:SAT_italic, italic;
-	font-size:20pt;
-	line-height: 26pt;
-	margin-top: 12pt;
+
+
+/* title page title h1*/
+.TTLPGTTL {
+	@include base-font-heading($multiplyer:2.75);
+	}
+/* title page subtitle h3*/
+.TTLPGSUB {
+	@include base-font-heading('SAT_italic, italic',1.7);
 	letter-spacing: .1em;
 }
-.HTTLPGTTL, #half-title h1  {
-	@include base-font-heading;
-	font-size:26pt;
-	line-height: 28pt;
+/* title page author h4*/
+.TTLPGAU {
+	@include base-font-heading($multiplyer:1.5);
+	margin-top:72pt;
+		
+}
+/* half title page title h1*/
+.HTTLPGTTL  {
+	@include base-font-heading($multiplyer:2.25);
 	margin-top: 48pt;
 }
-
-
-.CHAPTTL, #body-matter h2{
-	@include base-font-heading;
-	font-size:18pt;
-	margin-bottom:72pt;
-	letter-spacing: .1em;
-	+.CHAPSUB{
-	margin-top:36pt;
-	}
-	+#body-matter h3{
-	margin-top:36pt;
-	}
+/* chapter title h2*/
+.CHAPTTL {
+	@include base-font-heading($multiplyer:1.5);
+	margin-top: 48pt; 
+	+.CHAPSUB {	margin-top:36pt;}
+	+ p { text-indent:0;}
+	
 }
-.CHAPSUB, #body-matter h3 {
+/* chapter subtitle h3*/
+.CHAPSUB {
 	@include base-font-heading;	
-	margin-bottom:36pt;
 	font-size:11pt;
+	+ p { text-indent:0; margin-top:36pt;}
 }
-.CHAPNUM, .chapter h6 {
+/* chapter number h6*/
+.CHAPNUM {
+	@include base-font-heading($multiplyer:1.33);	
 	text-align:center;
-	font-size: 16pt;
-	line-height: 16pt; 
 	font-family: SAT_semibold; 
 	margin-top: 48pt;
-	margin-bottom: 48pt; 
 	text-transform: none
 }
+/* part num */
+.PARTNUM {
+	@include base-font-heading($font-family: SAT_semibold, $multiplyer: 1.5);
+	margin-top:80pt; 
+}
+/* part title */
+.PARTTTL {
+	@include base-font-heading($multiplyer:1.5);
+}
+/* front matter title */
 .FMTTL {
-	text-align:center;
-	font-size: 16pt;
-	line-height: 16pt;
-	margin:80pt 0 64pt 0; 
-	text-transform: uppercase;
-	letter-spacing: .1em;
+	@include base-font-heading($multiplyer: 1.5);
+	margin-top:80pt;
 }
+/* rear matter title */
 .RMTTL {
-	text-align:center;
-	font-size: 16pt;
-	line-height: 16pt;
-	margin:80pt 0 64pt 0; 
-	text-transform: uppercase;
-	letter-spacing: .1em;
+	@include base-font-heading($multiplyer: 1.5);
+	margin-top:80pt;
 }
 
-.A {
-	font-family:SAT_regular, serif;
-	-epub-hyphens:none;
-	-webkit-hyphens:none;
-	font-size:11pt;
-	font-style:normal;
-	font-weight:normal;
-	margin-bottom:8pt;
-	margin-left:0;
-	margin-right:0;
-	margin-top:24pt;
-	text-align:center;
-	text-transform: uppercase;
-	letter-spacing: .1em;
-	text-decoration:none;
-	text-indent:0px;
-	+ ol {
-		margin-top:0;
-	}
-	+ ul {
-		margin-top:0;
-	}
-	+ .B {
-		margin-top: 0;
-	}
-	+ p {
-		text-indent: 0;
-	}
+/* a */
+h4, [class$="A"] {
+	@include base-font-heading;
+	text-transform:none;
+	+ ol {margin-top:0;}
+	+ ul {margin-top:0;}
+	+ [class$="B"] {  margin-top: 0;}
 }
 
-.B {
-	font-family:SAT_italic, serif;
-	font-size:12.25pt;
-	font-style: normal;
-	font-weight: normal;
-	margin:26pt 0 6pt 0;
+/* b */
+h5, [class$="B"]{
+	@include base-font-heading('SAT_italic, serif');
+	margin-top:23pt;
+	text-transform:none;
 	text-align:left;
-	text-decoration:none;
-	text-indent:0px;
-	+ ol {
-		margin-top:0;
-	}
-	+ ul {
-		margin-top:0;
-	}
-	+ .C {
-		margin-top: 0;
-	}
-	+ p {
-		text-indent: 0;
-	}
+	+ ol {	margin-top:0;}
+	+ ul {	margin-top:0;}
+	+ [class$="C"]{	margin-top: 0;}
+	+ p { text-indent: 0;}
 }
-
+/*c*/
+[class$="C"] {
+	@include base-font-heading;
+	font-size:10.75pt;
+	text-align:left;
+	+ ol {	margin-top:0;}
+	+ ul {	margin-top:0;}
+	+ p {  text-indent: 0;	}
+}
 .CRUNIN {
 	font-family:SAT_regular, serif;
-	font-style:normal;
-	margin:16pt 0 0 0;
+	margin-top:$base-font-size;;
 	text-align:justify;
-	text-decoration:none;
 	text-indent:0px;
 }
-.runin-C {
-	padding-right: .75em;
-	font-weight: bold;
+
+
+
+/* title page title h1*/
+.TTLPGTTL {
+	@include base-font-heading($multiplyer:2.75);
+	}
+/* title page subtitle h3*/
+.TTLPGSUB {
+	@include base-font-heading('SAT_italic, italic',1.7);
+	letter-spacing: .1em;
 }
-.C {
-	font-family:SAT_regular, serif;
-	font-size:10.75pt;
-	margin: 14pt 0 1pt 0;
-	+ ol {
-		margin-top:0;
-	}
-	+ ul {
-		margin-top:0;
-	}
+/* title page author h4*/
+.TTLPGAU {
+	@include base-font-heading($multiplyer:1.5);
+	margin-top:72pt;
+		
+}
+/* half title page title h1*/
+.HTTLPGTTL  {
+	@include base-font-heading($multiplyer:2.25);
+	margin-top: 48pt;
+}
+/* chapter title h2*/
+.CHAPTTL {
+	@include base-font-heading($multiplyer:1.5);
+	margin-top: 48pt; 
+	+.CHAPSUB {	margin-top:36pt;}
+	+ p { text-indent:0;}
 	
-	+ p {
-		text-indent: 0;
-	}
 }
-
-.PARTNUM, #body-matter .part h6 {
-	hyphens:none;
-	font-family: SAT_semibold;
+/* chapter subtitle h3*/
+.CHAPSUB {
+	@include base-font-heading;	
+	font-size:11pt;
+	+ p { text-indent:0; margin-top:36pt;}
+}
+/* chapter number h6*/
+.CHAPNUM {
+	@include base-font-heading($multiplyer:1.33);	
 	text-align:center;
-	font-size: 16pt;
-	line-height: 16pt;
-	margin:80pt 0 48pt 0; 
-	text-transform: uppercase;
-	letter-spacing: .1em;
+	font-family: SAT_semibold; 
+	margin-top: 48pt;
+	text-transform: none
 }
-.PARTTTL, #body-matter .part h2 {
-	-webkit-hyphens:none;
-	font-family:SAT_regular;
-	font-size:30pt;
-	line-height: 34pt;
-	letter-spacing: .15em;
-	text-transform:uppercase;
+/* part num */
+.PARTNUM {
+	@include base-font-heading($font-family: SAT_semibold, $multiplyer: 1.5);
+	margin-top:80pt; 
+}
+/* part title */
+.PARTTTL {
+	@include base-font-heading($multiplyer:1.5);
+}
+/* front matter title */
+.FMTTL {
+	@include base-font-heading($multiplyer: 1.5);
+	margin-top:80pt;
+}
+/* rear matter title */
+.RMTTL {
+	@include base-font-heading($multiplyer: 1.5);
+	margin-top:80pt;
 }
 
-.RMA {
-	font-family: SAT_semibold;
-	font-size: 9.5pt;
-	line-height: 12pt;
-	text-transform: uppercase;
-	margin: 20pt 0 4pt 0;
-	letter-spacing: .1em;
-	text-indent: 0;
+/* a */
+h4, [class$="A"] {
+	@include base-font-heading;
+	text-transform:none;
+	+ ol {margin-top:0;}
+	+ ul {margin-top:0;}
+	+ [class$="B"] {  margin-top: 0;}
 }
+
+/* b */
+h5, [class$="B"]{
+	@include base-font-heading('SAT_italic, serif');
+	margin-top:23pt;
+	text-transform:none;
+	text-align:left;
+	+ ol {	margin-top:0;}
+	+ ul {	margin-top:0;}
+	+ [class$="C"]{	margin-top: 0;}
+	+ p { text-indent: 0;}
+}
+/*c*/
+h6, [class$="C"] {
+	@include base-font-heading;
+	font-size:10.75pt;
+	text-align:left;
+	+ ol {	margin-top:0;}
+	+ ul {	margin-top:0;}
+	+ p {  text-indent: 0;	}
+}
+.CRUNIN {
+	font-family:SAT_regular, serif;
+	margin-top:$base-font-size;;
+	text-align:justify;
+	text-indent:0px;
+}
+
+

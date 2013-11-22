@@ -55,6 +55,6 @@
 	text-indent: 0;
 }
 .ENITEM span > span  {
-	text-indent: 15pt;
-	margin-right:20pt;
+	text-indent: $base-text-indent;
+	margin-right:$base-text-indent*1.25;
 }
