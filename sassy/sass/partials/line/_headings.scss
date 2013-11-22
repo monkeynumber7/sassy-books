@@ -15,6 +15,9 @@
 	margin-top:72pt;
 		
 }
+.CONTRIB {
+	@include base-font-heading;
+}
 /* half title page title h1*/
 .HTTLPGTTL  {
 	@include base-font-heading($multiplyer:2.25);
@@ -72,7 +75,7 @@ h4, [class$="A"] {
 }
 
 /* b */
-h5, [class$="B"]{
+h5, FMB, BMB, RMB, B {
 	@include base-font-heading('SAT_italic, serif');
 	margin-top:23pt;
 	text-transform:none;
@@ -84,106 +87,6 @@ h5, [class$="B"]{
 }
 /*c*/
 [class$="C"] {
-	@include base-font-heading;
-	font-size:10.75pt;
-	text-align:left;
-	+ ol {	margin-top:0;}
-	+ ul {	margin-top:0;}
-	+ p {  text-indent: 0;	}
-}
-.CRUNIN {
-	font-family:SAT_regular, serif;
-	margin-top:$base-font-size;;
-	text-align:justify;
-	text-indent:0px;
-}
-
-
-
-/* title page title h1*/
-.TTLPGTTL {
-	@include base-font-heading($multiplyer:2.75);
-	}
-/* title page subtitle h3*/
-.TTLPGSUB {
-	@include base-font-heading('SAT_italic, italic',1.7);
-	letter-spacing: .1em;
-}
-/* title page author h4*/
-.TTLPGAU {
-	@include base-font-heading($multiplyer:1.5);
-	margin-top:72pt;
-		
-}
-/* half title page title h1*/
-.HTTLPGTTL  {
-	@include base-font-heading($multiplyer:2.25);
-	margin-top: 48pt;
-}
-/* chapter title h2*/
-.CHAPTTL {
-	@include base-font-heading($multiplyer:1.5);
-	margin-top: 48pt; 
-	+.CHAPSUB {	margin-top:36pt;}
-	+ p { text-indent:0;}
-	
-}
-/* chapter subtitle h3*/
-.CHAPSUB {
-	@include base-font-heading;	
-	font-size:11pt;
-	+ p { text-indent:0; margin-top:36pt;}
-}
-/* chapter number h6*/
-.CHAPNUM {
-	@include base-font-heading($multiplyer:1.33);	
-	text-align:center;
-	font-family: SAT_semibold; 
-	margin-top: 48pt;
-	text-transform: none
-}
-/* part num */
-.PARTNUM {
-	@include base-font-heading($font-family: SAT_semibold, $multiplyer: 1.5);
-	margin-top:80pt; 
-}
-/* part title */
-.PARTTTL {
-	@include base-font-heading($multiplyer:1.5);
-}
-/* front matter title */
-.FMTTL {
-	@include base-font-heading($multiplyer: 1.5);
-	margin-top:80pt;
-}
-/* rear matter title */
-.RMTTL {
-	@include base-font-heading($multiplyer: 1.5);
-	margin-top:80pt;
-}
-
-/* a */
-h4, [class$="A"] {
-	@include base-font-heading;
-	text-transform:none;
-	+ ol {margin-top:0;}
-	+ ul {margin-top:0;}
-	+ [class$="B"] {  margin-top: 0;}
-}
-
-/* b */
-h5, [class$="B"]{
-	@include base-font-heading('SAT_italic, serif');
-	margin-top:23pt;
-	text-transform:none;
-	text-align:left;
-	+ ol {	margin-top:0;}
-	+ ul {	margin-top:0;}
-	+ [class$="C"]{	margin-top: 0;}
-	+ p { text-indent: 0;}
-}
-/*c*/
-h6, [class$="C"] {
 	@include base-font-heading;
 	font-size:10.75pt;
 	text-align:left;

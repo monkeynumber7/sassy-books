@@ -10,7 +10,7 @@ $doc-rh-margin-top: 0.5in;
 }
 // left or right running head mixins 
 @mixin section-running-head($pagename,$align) {
-  @page $pagename: $align {
+  @page $pagename:$align {
   @top {
     @content;
 	text-align: $align;
@@ -20,7 +20,7 @@ $doc-rh-margin-top: 0.5in;
 }
 // first running head mixins
 @mixin section-running-head-first($pagename) {
-  @page $pagename: first {
+  @page $pagename:first {
   margin-bottom: $section-firstdoc-margin-bottom;
   @bottom {
     @content;
@@ -33,7 +33,7 @@ $doc-rh-margin-top: 0.5in;
 }
 // blank running head mixins 
 @mixin section-running-head-blank($pagename) {
-  @page $pagename: blank {
+  @page $pagename:blank {
   @bottom {
     content: "";
   }

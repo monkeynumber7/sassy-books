@@ -1,10 +1,7 @@
 /* <link href="/stylesheets/base.css" rel="stylesheet" type="text/css" />  */
 
-//@import 'compass';
-//@include global-reset;
-
-//@import 'modules/print/all';
-//@import 'partials/print/all';
+@import 'compass';
+@include global-reset;
 
 @import 'modules/line/all';
 @import 'partials/line/all';

@@ -64,7 +64,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 25, ../sass/test.scss */
+/* line 28, ../sass/test.scss */
 body {
   font-family: SAT_regular, sarif;
   font-size: 11.75pt;
@@ -159,7 +159,7 @@ font-variant:small-caps;
 #body-matter .chapter > p:first-of-type:first-letter {
   font-family: SAT_regular, sarif;
   float: left;
-  font-size: 48pt;
+  font-size: 32pt;
   /*36pt*/
   line-height: 32pt;
   /*32pt*/
@@ -378,8 +378,24 @@ ul.toc_bd_list {
   margin-top: 72pt;
 }
 
+/* line 18, ../sass/partials/line/_headings.scss */
+.CONTRIB {
+  -webkit-hyphens: none;
+  hyphens: none;
+  font-family: SAT_regular;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: inherit;
+  font-size: 11.75pt;
+  line-height: 16pt;
+  margin-top: 11.75pt;
+  text-indent: 0;
+}
+
 /* half title page title h1*/
-/* line 19, ../sass/partials/line/_headings.scss */
+/* line 22, ../sass/partials/line/_headings.scss */
 .HTTLPGTTL {
   -webkit-hyphens: none;
   hyphens: none;
@@ -397,7 +413,7 @@ ul.toc_bd_list {
 }
 
 /* chapter title h2*/
-/* line 24, ../sass/partials/line/_headings.scss */
+/* line 27, ../sass/partials/line/_headings.scss */
 .CHAPTTL {
   -webkit-hyphens: none;
   hyphens: none;
@@ -413,17 +429,17 @@ ul.toc_bd_list {
   text-indent: 0;
   margin-top: 48pt;
 }
-/* line 27, ../sass/partials/line/_headings.scss */
+/* line 30, ../sass/partials/line/_headings.scss */
 .CHAPTTL + .CHAPSUB {
   margin-top: 36pt;
 }
-/* line 28, ../sass/partials/line/_headings.scss */
+/* line 31, ../sass/partials/line/_headings.scss */
 .CHAPTTL + p {
   text-indent: 0;
 }
 
 /* chapter subtitle h3*/
-/* line 32, ../sass/partials/line/_headings.scss */
+/* line 35, ../sass/partials/line/_headings.scss */
 .CHAPSUB {
   -webkit-hyphens: none;
   hyphens: none;
@@ -439,14 +455,14 @@ ul.toc_bd_list {
   text-indent: 0;
   font-size: 11pt;
 }
-/* line 35, ../sass/partials/line/_headings.scss */
+/* line 38, ../sass/partials/line/_headings.scss */
 .CHAPSUB + p {
   text-indent: 0;
   margin-top: 36pt;
 }
 
 /* chapter number h6*/
-/* line 38, ../sass/partials/line/_headings.scss */
+/* line 41, ../sass/partials/line/_headings.scss */
 .CHAPNUM {
   -webkit-hyphens: none;
   hyphens: none;
@@ -467,7 +483,7 @@ ul.toc_bd_list {
 }
 
 /* part num */
-/* line 46, ../sass/partials/line/_headings.scss */
+/* line 49, ../sass/partials/line/_headings.scss */
 .PARTNUM {
   -webkit-hyphens: none;
   hyphens: none;
@@ -485,7 +501,7 @@ ul.toc_bd_list {
 }
 
 /* part title */
-/* line 51, ../sass/partials/line/_headings.scss */
+/* line 54, ../sass/partials/line/_headings.scss */
 .PARTTTL {
   -webkit-hyphens: none;
   hyphens: none;
@@ -502,7 +518,7 @@ ul.toc_bd_list {
 }
 
 /* front matter title */
-/* line 55, ../sass/partials/line/_headings.scss */
+/* line 58, ../sass/partials/line/_headings.scss */
 .FMTTL {
   -webkit-hyphens: none;
   hyphens: none;
@@ -520,7 +536,7 @@ ul.toc_bd_list {
 }
 
 /* rear matter title */
-/* line 60, ../sass/partials/line/_headings.scss */
+/* line 63, ../sass/partials/line/_headings.scss */
 .RMTTL {
   -webkit-hyphens: none;
   hyphens: none;
@@ -538,7 +554,7 @@ ul.toc_bd_list {
 }
 
 /* a */
-/* line 66, ../sass/partials/line/_headings.scss */
+/* line 69, ../sass/partials/line/_headings.scss */
 h4, [class$="A"] {
   -webkit-hyphens: none;
   hyphens: none;
@@ -554,22 +570,22 @@ h4, [class$="A"] {
   text-indent: 0;
   text-transform: none;
 }
-/* line 69, ../sass/partials/line/_headings.scss */
+/* line 72, ../sass/partials/line/_headings.scss */
 h4 + ol, [class$="A"] + ol {
   margin-top: 0;
 }
-/* line 70, ../sass/partials/line/_headings.scss */
+/* line 73, ../sass/partials/line/_headings.scss */
 h4 + ul, [class$="A"] + ul {
   margin-top: 0;
 }
-/* line 71, ../sass/partials/line/_headings.scss */
+/* line 74, ../sass/partials/line/_headings.scss */
 h4 + [class$="B"], [class$="A"] + [class$="B"] {
   margin-top: 0;
 }
 
 /* b */
-/* line 75, ../sass/partials/line/_headings.scss */
-h5, [class$="B"] {
+/* line 78, ../sass/partials/line/_headings.scss */
+h5, FMB, BMB, RMB, B {
   -webkit-hyphens: none;
   hyphens: none;
   font-family: SAT_italic, serif;
@@ -586,25 +602,25 @@ h5, [class$="B"] {
   text-transform: none;
   text-align: left;
 }
-/* line 80, ../sass/partials/line/_headings.scss */
-h5 + ol, [class$="B"] + ol {
-  margin-top: 0;
-}
-/* line 81, ../sass/partials/line/_headings.scss */
-h5 + ul, [class$="B"] + ul {
-  margin-top: 0;
-}
-/* line 82, ../sass/partials/line/_headings.scss */
-h5 + [class$="C"], [class$="B"] + [class$="C"] {
-  margin-top: 0;
-}
 /* line 83, ../sass/partials/line/_headings.scss */
-h5 + p, [class$="B"] + p {
+h5 + ol, FMB + ol, BMB + ol, RMB + ol, B + ol {
+  margin-top: 0;
+}
+/* line 84, ../sass/partials/line/_headings.scss */
+h5 + ul, FMB + ul, BMB + ul, RMB + ul, B + ul {
+  margin-top: 0;
+}
+/* line 85, ../sass/partials/line/_headings.scss */
+h5 + [class$="C"], FMB + [class$="C"], BMB + [class$="C"], RMB + [class$="C"], B + [class$="C"] {
+  margin-top: 0;
+}
+/* line 86, ../sass/partials/line/_headings.scss */
+h5 + p, FMB + p, BMB + p, RMB + p, B + p {
   text-indent: 0;
 }
 
 /*c*/
-/* line 86, ../sass/partials/line/_headings.scss */
+/* line 89, ../sass/partials/line/_headings.scss */
 [class$="C"] {
   -webkit-hyphens: none;
   hyphens: none;
@@ -621,337 +637,20 @@ h5 + p, [class$="B"] + p {
   font-size: 10.75pt;
   text-align: left;
 }
-/* line 90, ../sass/partials/line/_headings.scss */
+/* line 93, ../sass/partials/line/_headings.scss */
 [class$="C"] + ol {
   margin-top: 0;
 }
-/* line 91, ../sass/partials/line/_headings.scss */
+/* line 94, ../sass/partials/line/_headings.scss */
 [class$="C"] + ul {
   margin-top: 0;
 }
-/* line 92, ../sass/partials/line/_headings.scss */
+/* line 95, ../sass/partials/line/_headings.scss */
 [class$="C"] + p {
   text-indent: 0;
 }
 
-/* line 94, ../sass/partials/line/_headings.scss */
-.CRUNIN {
-  font-family: SAT_regular, serif;
-  margin-top: 11.75pt;
-  text-align: justify;
-  text-indent: 0px;
-}
-
-/* title page title h1*/
-/* line 104, ../sass/partials/line/_headings.scss */
-.TTLPGTTL {
-  -webkit-hyphens: none;
-  hyphens: none;
-  font-family: SAT_regular;
-  letter-spacing: .15em;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  color: inherit;
-  font-size: 32.3125pt;
-  line-height: 44pt;
-  margin-top: 32.3125pt;
-  text-indent: 0;
-}
-
-/* title page subtitle h3*/
-/* line 108, ../sass/partials/line/_headings.scss */
-.TTLPGSUB {
-  -webkit-hyphens: none;
-  hyphens: none;
-  font-family: SAT_italic, italic;
-  letter-spacing: .15em;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  color: inherit;
-  font-size: 19.975pt;
-  line-height: 27.2pt;
-  margin-top: 19.975pt;
-  text-indent: 0;
-  letter-spacing: .1em;
-}
-
-/* title page author h4*/
-/* line 113, ../sass/partials/line/_headings.scss */
-.TTLPGAU {
-  -webkit-hyphens: none;
-  hyphens: none;
-  font-family: SAT_regular;
-  letter-spacing: .15em;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  color: inherit;
-  font-size: 17.625pt;
-  line-height: 24pt;
-  margin-top: 17.625pt;
-  text-indent: 0;
-  margin-top: 72pt;
-}
-
-/* half title page title h1*/
-/* line 119, ../sass/partials/line/_headings.scss */
-.HTTLPGTTL {
-  -webkit-hyphens: none;
-  hyphens: none;
-  font-family: SAT_regular;
-  letter-spacing: .15em;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  color: inherit;
-  font-size: 26.4375pt;
-  line-height: 36pt;
-  margin-top: 26.4375pt;
-  text-indent: 0;
-  margin-top: 48pt;
-}
-
-/* chapter title h2*/
-/* line 124, ../sass/partials/line/_headings.scss */
-.CHAPTTL {
-  -webkit-hyphens: none;
-  hyphens: none;
-  font-family: SAT_regular;
-  letter-spacing: .15em;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  color: inherit;
-  font-size: 17.625pt;
-  line-height: 24pt;
-  margin-top: 17.625pt;
-  text-indent: 0;
-  margin-top: 48pt;
-}
-/* line 127, ../sass/partials/line/_headings.scss */
-.CHAPTTL + .CHAPSUB {
-  margin-top: 36pt;
-}
-/* line 128, ../sass/partials/line/_headings.scss */
-.CHAPTTL + p {
-  text-indent: 0;
-}
-
-/* chapter subtitle h3*/
-/* line 132, ../sass/partials/line/_headings.scss */
-.CHAPSUB {
-  -webkit-hyphens: none;
-  hyphens: none;
-  font-family: SAT_regular;
-  letter-spacing: .15em;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  color: inherit;
-  font-size: 11.75pt;
-  line-height: 16pt;
-  margin-top: 11.75pt;
-  text-indent: 0;
-  font-size: 11pt;
-}
-/* line 135, ../sass/partials/line/_headings.scss */
-.CHAPSUB + p {
-  text-indent: 0;
-  margin-top: 36pt;
-}
-
-/* chapter number h6*/
-/* line 138, ../sass/partials/line/_headings.scss */
-.CHAPNUM {
-  -webkit-hyphens: none;
-  hyphens: none;
-  font-family: SAT_regular;
-  letter-spacing: .15em;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  color: inherit;
-  font-size: 15.6275pt;
-  line-height: 21.28pt;
-  margin-top: 15.6275pt;
-  text-indent: 0;
-  text-align: center;
-  font-family: SAT_semibold;
-  margin-top: 48pt;
-  text-transform: none;
-}
-
-/* part num */
-/* line 146, ../sass/partials/line/_headings.scss */
-.PARTNUM {
-  -webkit-hyphens: none;
-  hyphens: none;
-  font-family: SAT_semibold;
-  letter-spacing: .15em;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  color: inherit;
-  font-size: 17.625pt;
-  line-height: 24pt;
-  margin-top: 17.625pt;
-  text-indent: 0;
-  margin-top: 80pt;
-}
-
-/* part title */
-/* line 151, ../sass/partials/line/_headings.scss */
-.PARTTTL {
-  -webkit-hyphens: none;
-  hyphens: none;
-  font-family: SAT_regular;
-  letter-spacing: .15em;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  color: inherit;
-  font-size: 17.625pt;
-  line-height: 24pt;
-  margin-top: 17.625pt;
-  text-indent: 0;
-}
-
-/* front matter title */
-/* line 155, ../sass/partials/line/_headings.scss */
-.FMTTL {
-  -webkit-hyphens: none;
-  hyphens: none;
-  font-family: SAT_regular;
-  letter-spacing: .15em;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  color: inherit;
-  font-size: 17.625pt;
-  line-height: 24pt;
-  margin-top: 17.625pt;
-  text-indent: 0;
-  margin-top: 80pt;
-}
-
-/* rear matter title */
-/* line 160, ../sass/partials/line/_headings.scss */
-.RMTTL {
-  -webkit-hyphens: none;
-  hyphens: none;
-  font-family: SAT_regular;
-  letter-spacing: .15em;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  color: inherit;
-  font-size: 17.625pt;
-  line-height: 24pt;
-  margin-top: 17.625pt;
-  text-indent: 0;
-  margin-top: 80pt;
-}
-
-/* a */
-/* line 166, ../sass/partials/line/_headings.scss */
-h4, [class$="A"] {
-  -webkit-hyphens: none;
-  hyphens: none;
-  font-family: SAT_regular;
-  letter-spacing: .15em;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  color: inherit;
-  font-size: 11.75pt;
-  line-height: 16pt;
-  margin-top: 11.75pt;
-  text-indent: 0;
-  text-transform: none;
-}
-/* line 169, ../sass/partials/line/_headings.scss */
-h4 + ol, [class$="A"] + ol {
-  margin-top: 0;
-}
-/* line 170, ../sass/partials/line/_headings.scss */
-h4 + ul, [class$="A"] + ul {
-  margin-top: 0;
-}
-/* line 171, ../sass/partials/line/_headings.scss */
-h4 + [class$="B"], [class$="A"] + [class$="B"] {
-  margin-top: 0;
-}
-
-/* b */
-/* line 175, ../sass/partials/line/_headings.scss */
-h5, [class$="B"] {
-  -webkit-hyphens: none;
-  hyphens: none;
-  font-family: SAT_italic, serif;
-  letter-spacing: .15em;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  color: inherit;
-  font-size: 11.75pt;
-  line-height: 16pt;
-  margin-top: 11.75pt;
-  text-indent: 0;
-  margin-top: 23pt;
-  text-transform: none;
-  text-align: left;
-}
-/* line 180, ../sass/partials/line/_headings.scss */
-h5 + ol, [class$="B"] + ol {
-  margin-top: 0;
-}
-/* line 181, ../sass/partials/line/_headings.scss */
-h5 + ul, [class$="B"] + ul {
-  margin-top: 0;
-}
-/* line 182, ../sass/partials/line/_headings.scss */
-h5 + [class$="C"], [class$="B"] + [class$="C"] {
-  margin-top: 0;
-}
-/* line 183, ../sass/partials/line/_headings.scss */
-h5 + p, [class$="B"] + p {
-  text-indent: 0;
-}
-
-/*c*/
-/* line 186, ../sass/partials/line/_headings.scss */
-h6, [class$="C"] {
-  -webkit-hyphens: none;
-  hyphens: none;
-  font-family: SAT_regular;
-  letter-spacing: .15em;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  color: inherit;
-  font-size: 11.75pt;
-  line-height: 16pt;
-  margin-top: 11.75pt;
-  text-indent: 0;
-  font-size: 10.75pt;
-  text-align: left;
-}
-/* line 190, ../sass/partials/line/_headings.scss */
-h6 + ol, [class$="C"] + ol {
-  margin-top: 0;
-}
-/* line 191, ../sass/partials/line/_headings.scss */
-h6 + ul, [class$="C"] + ul {
-  margin-top: 0;
-}
-/* line 192, ../sass/partials/line/_headings.scss */
-h6 + p, [class$="C"] + p {
-  text-indent: 0;
-}
-
-/* line 194, ../sass/partials/line/_headings.scss */
+/* line 97, ../sass/partials/line/_headings.scss */
 .CRUNIN {
   font-family: SAT_regular, serif;
   margin-top: 11.75pt;
@@ -1048,9 +747,10 @@ h6 + p, [class$="C"] + p {
 .BMFIRST {
   font-family: SAT_regular, sarif;
   text-indent: 0;
+  margin-top: 32pt;
 }
 
-/* line 15, ../sass/partials/line/_paras.scss */
+/* line 16, ../sass/partials/line/_paras.scss */
 .CPYINFO, #copyright p {
   -webkit-hyphens: none;
   color: Black;
@@ -1062,13 +762,13 @@ h6 + p, [class$="C"] + p {
   margin-left: 16pt;
 }
 
-/* line 27, ../sass/partials/line/_paras.scss */
+/* line 28, ../sass/partials/line/_paras.scss */
 .SIG {
   text-align: right;
   font-family: SAT_italic, italic;
 }
 
-/* line 31, ../sass/partials/line/_paras.scss */
+/* line 32, ../sass/partials/line/_paras.scss */
 .SIDE {
   color: gray;
   line-height: 14pt;
@@ -1080,7 +780,7 @@ h6 + p, [class$="C"] + p {
   font-size: 11pt;
 }
 
-/* line 41, ../sass/partials/line/_paras.scss */
+/* line 42, ../sass/partials/line/_paras.scss */
 .EXT {
   font-family: SAT_regular, serif;
   font-size: 11pt;
@@ -1095,7 +795,7 @@ h6 + p, [class$="C"] + p {
   margin-bottom: 16pt;
 }
 
-/* line 44, ../sass/partials/line/_paras.scss */
+/* line 45, ../sass/partials/line/_paras.scss */
 .EXT1st {
   font-family: SAT_regular, serif;
   font-size: 11pt;
@@ -1111,7 +811,7 @@ h6 + p, [class$="C"] + p {
   margin-bottom: 0px;
 }
 
-/* line 48, ../sass/partials/line/_paras.scss */
+/* line 49, ../sass/partials/line/_paras.scss */
 .EXTMd {
   font-family: SAT_regular, serif;
   font-size: 11pt;
@@ -1128,7 +828,7 @@ h6 + p, [class$="C"] + p {
   text-indent: 12pt;
 }
 
-/* line 53, ../sass/partials/line/_paras.scss */
+/* line 54, ../sass/partials/line/_paras.scss */
 .EXTLs {
   font-family: SAT_regular, serif;
   font-size: 11pt;
@@ -1144,7 +844,7 @@ h6 + p, [class$="C"] + p {
   text-indent: 12pt;
 }
 
-/* line 58, ../sass/partials/line/_paras.scss */
+/* line 59, ../sass/partials/line/_paras.scss */
 .DED {
   hyphens: none;
   font-family: SAT_italic;
@@ -1159,21 +859,21 @@ h6 + p, [class$="C"] + p {
   text-indent: 0;
 }
 
-/* line 74, ../sass/partials/line/_paras.scss */
+/* line 75, ../sass/partials/line/_paras.scss */
 .RMFIRST {
   font-size: 10pt;
   line-height: 12pt;
   text-indent: 0;
 }
 
-/* line 79, ../sass/partials/line/_paras.scss */
+/* line 80, ../sass/partials/line/_paras.scss */
 .RMTXT {
   font-size: 10pt;
   line-height: 12pt;
   text-indent: 12pt;
 }
 
-/* line 84, ../sass/partials/line/_paras.scss */
+/* line 85, ../sass/partials/line/_paras.scss */
 .BIB {
   font-size: 10pt;
   line-height: 12pt;

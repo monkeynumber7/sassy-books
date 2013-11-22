@@ -4,6 +4,8 @@
 @include global-reset;
 
 @import 'modules/line/all';
+
+
 $base-font-family: SAT_regular, sarif;
 $base-text-align: justify;
 
@@ -17,7 +19,8 @@ $base-padding: $base-line-height * .375;
 $base-line-height-half: $base-line-height / 2;
 $base-line-height-dub: $base-line-height * 2;
 
-$base-font-size-trip: $base-line-height * 3;
+$base-font-size-dub: $base-font-size * 2;
+$base-font-size-trip: $base-font-size * 3;
 
 $caption-font-size: $base-font-size * .85;
 $caption-line-height: $base-line-height * .8125;

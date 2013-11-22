@@ -30,12 +30,12 @@ body {
 }
 /* contents-matter is all sub section after the contents(toc) */
 /*left pages */
-@include section-running-head("contents-matter","left") {
+@include section-running-head("contents-matter",left) {
       content: counter(page, lower-roman) " \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 " string(Chaptertitle);
     }
 
 /*right pages */
-@include section-running-head("contents-matter","right") {
+@include section-running-head("contents-matter",right) {
       content: string(Chaptertitle) " \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 " counter(page, lower-roman);
     }
 
@@ -49,18 +49,18 @@ body {
 /* define front matter as contents-matter */
 #front-matter > div:not(#title):not(#half-title):not(#copyright):not(#epigraph):not(#dedication) {
   page: contents-matter;
-  prince-doc-group: start;
+  prince-page-group: start;
 }
 
 /* chap is all chapters */
 /*chapters first page headers and footers */
 /*left pages */
-@include section-running-head("chap","left") {
+@include section-running-head("chap",left) {
       content: counter(page) " \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 " string(Booktitle);
     }
 
 /*right pages */
-@include section-running-head("chap","right") {
+@include section-running-head("chap",right) {
       content: string(Chaptertitle) " \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 " counter(page);
     }
 
@@ -73,7 +73,7 @@ body {
 /* define chapter pages */
 #body-matter .chapter {
   page: chap;
-  prince-doc-group: start;
+  prince-page-group: start;
 }
 
 /* part is the part divider */
@@ -83,17 +83,17 @@ body {
 /*define part */
 #body-matter .part {
   page: part;
-  prince-doc-group: start;
+  prince-page-group: start;
 }
 
 /*define rear page groups */
 /*left pages */
-@include section-running-head("rear","left") {
+@include section-running-head("rear",left) {
       content: counter(page) " \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 " string(Chaptertitle);
     }
 
 /*right pages */
-@include section-running-head("rear","right") {
+@include section-running-head("rear",right) {
       content: string(Chaptertitle) " \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 " counter(page);
     }
 
@@ -106,5 +106,5 @@ body {
 
 #rear-matter > div {
   page: rear;
-  prince-doc-group: start;
+  prince-page-group: start;
 }
