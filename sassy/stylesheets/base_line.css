@@ -898,6 +898,7 @@ ul.toc_bd_list {
   color: gray;
   line-height: 14pt;
   float: left;
+  page-break-inside: avoid;
   width: 150px;
   text-align: left;
   padding: 1em 1em 0 0;
@@ -905,7 +906,7 @@ ul.toc_bd_list {
   font-size: 11pt;
 }
 
-/* line 55, ../sass/partials/line/_paras.scss */
+/* line 56, ../sass/partials/line/_paras.scss */
 .EXT {
   font-family: SAT_regular, serif;
   font-size: 11pt;
@@ -920,7 +921,7 @@ ul.toc_bd_list {
   margin-bottom: 16pt;
 }
 
-/* line 58, ../sass/partials/line/_paras.scss */
+/* line 59, ../sass/partials/line/_paras.scss */
 .EXT1st {
   font-family: SAT_regular, serif;
   font-size: 11pt;
@@ -936,7 +937,7 @@ ul.toc_bd_list {
   margin-bottom: 0px;
 }
 
-/* line 62, ../sass/partials/line/_paras.scss */
+/* line 63, ../sass/partials/line/_paras.scss */
 .EXTMd {
   font-family: SAT_regular, serif;
   font-size: 11pt;
@@ -953,7 +954,7 @@ ul.toc_bd_list {
   text-indent: 12pt;
 }
 
-/* line 67, ../sass/partials/line/_paras.scss */
+/* line 68, ../sass/partials/line/_paras.scss */
 .EXTLs {
   font-family: SAT_regular, serif;
   font-size: 11pt;
@@ -969,7 +970,7 @@ ul.toc_bd_list {
   text-indent: 12pt;
 }
 
-/* line 72, ../sass/partials/line/_paras.scss */
+/* line 73, ../sass/partials/line/_paras.scss */
 .DED {
   hyphens: none;
   font-family: SAT_italic;
@@ -984,21 +985,21 @@ ul.toc_bd_list {
   text-indent: 0;
 }
 
-/* line 88, ../sass/partials/line/_paras.scss */
+/* line 89, ../sass/partials/line/_paras.scss */
 .RMFIRST {
   font-size: 10pt;
   line-height: 12pt;
   text-indent: 0;
 }
 
-/* line 93, ../sass/partials/line/_paras.scss */
+/* line 94, ../sass/partials/line/_paras.scss */
 .RMTXT {
   font-size: 10pt;
   line-height: 12pt;
   text-indent: 12pt;
 }
 
-/* line 98, ../sass/partials/line/_paras.scss */
+/* line 99, ../sass/partials/line/_paras.scss */
 .BIB {
   font-size: 10pt;
   line-height: 12pt;
