@@ -17,38 +17,6 @@ $caption-font-size: $base-font-size * .85;
 $caption-line-height: $base-line-height * .8125;
 
 
-@mixin base-font-heading ($font-family:SAT_regular, $multiplyer:1,$my-color:inherit){
-	-webkit-hyphens:none;
-	hyphens:none;
-	font-family:#{$font-family};
-	letter-spacing: .15em;
-	text-transform:uppercase;
-	text-decoration:none;
-	text-align: center;
-	color:$my-color;
-	font-size:$base-font-size * $multiplyer;
-	line-height: $base-line-height * $multiplyer;
-	margin-top: $base-font-size * $multiplyer;
-	text-indent:0;
 
-}
-@mixin base-dingbat($inner-content:"\2022 \a0 \a0 \a0 \a0 \a0 \2022 \a0 \a0 \a0 \a0 \a0 \2022 "){
-	text-align: center;
-	line-height: $base-line-height;
-	margin: $base-line-height-half 0 $base-line-height-half 0;
-	content: $inner-content;
-}
-@mixin base-text-para-ext {
-	font-family:SAT_regular, serif;
-	font-size:11pt;
-	line-height: 16pt;
-	font-style:normal;
-	margin-left:15pt;
-	margin-right:15pt;
-	margin-top:16pt;
-	text-align:justify;
-	text-decoration:none;
-	text-indent:0px;
-	margin-bottom:16pt;
-	
-}
+
+

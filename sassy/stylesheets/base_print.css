@@ -336,3 +336,23 @@ body span.NFIRST:before, body span.NTEXT:before, body span.NFIRST:after, body sp
 #illustrations ul a:after {
   content: leader(" ") " " target-counter(attr(href, url), page);
 }
+
+/* pdf bookmarks */
+/*pdf bookmarks */
+/* line 2, ../sass/partials/print/_pdfbookmarks.scss */
+div > h2 {
+  bookmark-level: 1;
+  bookmark-state: closed;
+}
+
+/* line 7, ../sass/partials/print/_pdfbookmarks.scss */
+h3, h4, h5, h6 {
+  prince-bookmark-level: none;
+}
+
+/* line 11, ../sass/partials/print/_pdfbookmarks.scss */
+#copyright {
+  bookmark-level: 1;
+  bookmark-state: closed;
+  bookmark-label: "Copyright Page";
+}

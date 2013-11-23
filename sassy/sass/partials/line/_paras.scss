@@ -1,4 +1,17 @@
-
+@mixin base-text-para-ext {
+	font-family:SAT_regular, serif;
+	font-size:11pt;
+	line-height: 16pt;
+	font-style:normal;
+	margin-left:15pt;
+	margin-right:15pt;
+	margin-top:16pt;
+	text-align:justify;
+	text-decoration:none;
+	text-indent:0px;
+	margin-bottom:16pt;
+	
+}
 
 .BM-TXT {
 	font-family:$base-font-family;

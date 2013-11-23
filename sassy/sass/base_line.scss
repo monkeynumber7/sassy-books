@@ -1,28 +1,40 @@
 /* <link href="/stylesheets/base.css" rel="stylesheet" type="text/css" />  */
 
+//reset so we can work with a blank slate
 @import 'compass';
 @include global-reset;
 
+//import mixins and initial variabls
 @import 'modules/line/all';
+
+//variables set here for each template
+$base-font-family: SAT_regular, sarif;
+$base-text-align: justify;
+
+
+$base-font-size: 11.75pt;
+$base-line-height: 16pt;
+$base-text-indent: 15pt;
+
+$base-padding: $base-line-height * .375;
+
+$base-line-height-half: $base-line-height / 2;
+$base-line-height-dub: $base-line-height * 2;
+
+$base-font-size-dub: $base-font-size * 2;
+$base-font-size-trip: $base-font-size * 3;
+
+$caption-font-size: $base-font-size * .85;
+$caption-line-height: $base-line-height * .8125;
+
+body {
+	font-family: $base-font-family;
+	font-size:$base-font-size;
+	line-height: $base-line-height;
+	text-indent: $base-text-indent;
+	text-align: $base-text-align;
+	margin: 0;
+}
+
+//partial imports here
 @import 'partials/line/all';
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
-	
-
-	

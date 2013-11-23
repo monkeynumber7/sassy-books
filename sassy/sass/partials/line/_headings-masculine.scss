@@ -1,4 +1,3 @@
-
 @mixin base-font-heading ($font-family:SAT_regular, $multiplyer:1,$bg-color:inherit){
 	-webkit-hyphens:none;
 	hyphens:none;
@@ -6,14 +5,16 @@
 	letter-spacing: .15em;
 	text-transform:uppercase;
 	text-decoration:none;
-	text-align: center;
-	background-color:$bg-color;
+	//change from center to left
+	text-align: left;
+	color:$bg-color;
 	font-size:$base-font-size * $multiplyer;
 	line-height: $base-line-height * $multiplyer;
 	margin-top: $base-font-size * $multiplyer;
 	text-indent:0;
 
 }
+
 /* title page title h1*/
 .TTLPGTTL {
 	@include base-font-heading($multiplyer:2.75);
@@ -39,7 +40,8 @@
 }
 /* chapter title h2*/
 .CHAPTTL {
-	@include base-font-heading($multiplyer:1.5);
+	@include base-font-heading($multiplyer:1.5, $bg-color:black);
+	display:block;
 	margin-top: 48pt; 
 	+.CHAPSUB {	margin-top:36pt;}
 	+ p { text-indent:0;}
