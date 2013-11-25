@@ -14,3 +14,14 @@ $section-header-margin-top: $doc-trim-height * .22;
 $section-firstdoc-margin-bottom: 1in;
 $fn-symbols: counter(footnote, symbols("*", "**", "***", "****", "\2020", "\2021", "\00A7", "1", "2"));
 
+$front-matter-header-left: counter(page, lower-roman) " \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 " string(Chaptertitle);
+$front-matter-header-right: string(Chaptertitle) " \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 " counter(page, lower-roman);
+$front-matter-header-first: counter(page, lower-roman);
+
+$body-matter-header-left:  counter(page) " \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 " string(Booktitle);
+$body-matter-header-right: string(Chaptertitle) " \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 " counter(page);
+$body-matter-header-first: counter(page);
+
+$rear-matter-header-left:  counter(page) " \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 " string(Chaptertitle);
+$rear-matter-header-right: string(Chaptertitle) " \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 " counter(page);
+$rear-matter-header-first: counter(page);

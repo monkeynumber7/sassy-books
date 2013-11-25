@@ -29,24 +29,27 @@ body {
   }
 }
 /* contents-matter is all sub section after the contents(toc) */
+
 /*left pages */
 @include section-running-head("contents-matter",left) {
-      content: counter(page, lower-roman) " \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 " string(Chaptertitle);
+      content: $front-matter-header-left;
     }
+
 
 /*right pages */
 @include section-running-head("contents-matter",right) {
-      content: string(Chaptertitle) " \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 " counter(page, lower-roman);
+      content: $front-matter-header-right;
     }
 
 /*first page of each front matter sub section */
+
 @include section-running-head-first("contents-matter") {
-	    content: counter(page, lower-roman);
+	    content: $front-matter-header-first;
 	}
 
 @include section-running-head-blank("contents-matter") {}
 
-/* define front matter as contents-matter */
+/* define front matter as contents-matter not sectons without headers though*/
 #front-matter > div:not(#title):not(#half-title):not(#copyright):not(#epigraph):not(#dedication) {
   page: contents-matter;
   prince-page-group: start;
@@ -55,17 +58,19 @@ body {
 /* chap is all chapters */
 /*chapters first page headers and footers */
 /*left pages */
+
 @include section-running-head("chap",left) {
-      content: counter(page) " \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 " string(Booktitle);
+      content: $body-matter-header-left;
     }
 
 /*right pages */
+
 @include section-running-head("chap",right) {
-      content: string(Chaptertitle) " \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 " counter(page);
+      content: $body-matter-header-right;
     }
 
 @include section-running-head-first("chap") {
-	  content: counter(page);
+	  content: $body-matter-header-first;
 	}
 
 @include section-running-head-blank("chap") {}
@@ -88,17 +93,19 @@ body {
 
 /*define rear page groups */
 /*left pages */
+
 @include section-running-head("rear",left) {
-      content: counter(page) " \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 " string(Chaptertitle);
+      content: $rear-matter-header-left;
     }
 
 /*right pages */
+
 @include section-running-head("rear",right) {
-      content: string(Chaptertitle) " \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 " counter(page);
+      content: $rear-matter-header-right;
     }
 
 @include section-running-head-first("rear") {
-	  content: counter(page);
+	  content: $rear-matter-header-first;
 	}
 
 @include section-running-head-blank("rear") {}
