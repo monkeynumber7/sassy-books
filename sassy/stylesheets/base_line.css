@@ -90,6 +90,10 @@ body {
   margin: 8pt 0 8pt 0;
   content: "";
 }
+/* line 14, ../sass/partials/line/_breaks.scss */
+*[class*='TXB'] + p {
+  text-indent: 0;
+}
 
 /* display paragraphs symbol and keep inline in editor */
 /* line 3, ../sass/partials/line/_editor.scss */

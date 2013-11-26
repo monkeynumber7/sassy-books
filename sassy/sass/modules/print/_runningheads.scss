@@ -9,8 +9,8 @@ $doc-rh-margin-top: 0.5in;
   font-size: $doc-rh-font-size;
 }
 // left or right running head mixins 
-@mixin section-running-head($pagename,$align) {
-  @page $pagename:$align {
+@mixin section-running-head($pagename,$align,$page) {
+  @page $pagename:$page {
   @top {
     @content;
 	text-align: $align;

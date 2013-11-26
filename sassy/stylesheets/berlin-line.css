@@ -64,7 +64,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 30, ../sass/berlin.scss */
+/* line 30, ../sass/berlin-line.scss */
 body {
   font-family: SAT_regular, sarif;
   font-size: 11.75pt;
@@ -89,6 +89,10 @@ body {
   line-height: 16pt;
   margin: 8pt 0 8pt 0;
   content: "";
+}
+/* line 14, ../sass/partials/line/_breaks.scss */
+*[class*='TXB'] + p {
+  text-indent: 0;
 }
 
 /* display paragraphs symbol and keep inline in editor */
@@ -215,7 +219,7 @@ strong {
 .TTLPGTTL {
   -webkit-hyphens: none;
   hyphens: none;
-  font-family: SAT_regular;
+  font-family: SAT_disp_bold;
   letter-spacing: .15em;
   text-transform: uppercase;
   text-decoration: none;
@@ -225,10 +229,11 @@ strong {
   line-height: 44pt;
   margin-top: 32.3125pt;
   text-indent: 0;
+  letter-spacing: .05em;
 }
 
 /* title page subtitle h3*/
-/* line 23, ../sass/partials/line/_headings-masculine.scss */
+/* line 24, ../sass/partials/line/_headings-masculine.scss */
 .TTLPGSUB {
   -webkit-hyphens: none;
   hyphens: none;
@@ -246,7 +251,7 @@ strong {
 }
 
 /* title page author h4*/
-/* line 28, ../sass/partials/line/_headings-masculine.scss */
+/* line 29, ../sass/partials/line/_headings-masculine.scss */
 .TTLPGAU {
   -webkit-hyphens: none;
   hyphens: none;
@@ -263,7 +268,7 @@ strong {
   margin-top: 72pt;
 }
 
-/* line 33, ../sass/partials/line/_headings-masculine.scss */
+/* line 34, ../sass/partials/line/_headings-masculine.scss */
 .CONTRIB {
   -webkit-hyphens: none;
   hyphens: none;
@@ -280,7 +285,7 @@ strong {
 }
 
 /* half title page title h1*/
-/* line 37, ../sass/partials/line/_headings-masculine.scss */
+/* line 38, ../sass/partials/line/_headings-masculine.scss */
 .HTTLPGTTL {
   -webkit-hyphens: none;
   hyphens: none;
@@ -298,7 +303,7 @@ strong {
 }
 
 /* chapter title h2*/
-/* line 42, ../sass/partials/line/_headings-masculine.scss */
+/* line 43, ../sass/partials/line/_headings-masculine.scss */
 .CHAPTTL {
   -webkit-hyphens: none;
   hyphens: none;
@@ -312,20 +317,21 @@ strong {
   line-height: 24pt;
   margin-top: 17.625pt;
   text-indent: 0;
+  color: white;
   display: block;
   margin-top: 48pt;
 }
-/* line 46, ../sass/partials/line/_headings-masculine.scss */
+/* line 48, ../sass/partials/line/_headings-masculine.scss */
 .CHAPTTL + .CHAPSUB {
   margin-top: 36pt;
 }
-/* line 47, ../sass/partials/line/_headings-masculine.scss */
+/* line 49, ../sass/partials/line/_headings-masculine.scss */
 .CHAPTTL + p {
   text-indent: 0;
 }
 
 /* chapter subtitle h3*/
-/* line 51, ../sass/partials/line/_headings-masculine.scss */
+/* line 53, ../sass/partials/line/_headings-masculine.scss */
 .CHAPSUB {
   -webkit-hyphens: none;
   hyphens: none;
@@ -341,14 +347,14 @@ strong {
   text-indent: 0;
   font-size: 11pt;
 }
-/* line 54, ../sass/partials/line/_headings-masculine.scss */
+/* line 56, ../sass/partials/line/_headings-masculine.scss */
 .CHAPSUB + p {
   text-indent: 0;
   margin-top: 36pt;
 }
 
 /* chapter number h6*/
-/* line 57, ../sass/partials/line/_headings-masculine.scss */
+/* line 59, ../sass/partials/line/_headings-masculine.scss */
 .CHAPNUM {
   -webkit-hyphens: none;
   hyphens: none;
@@ -369,7 +375,7 @@ strong {
 }
 
 /* part num */
-/* line 65, ../sass/partials/line/_headings-masculine.scss */
+/* line 67, ../sass/partials/line/_headings-masculine.scss */
 .PARTNUM {
   -webkit-hyphens: none;
   hyphens: none;
@@ -378,16 +384,18 @@ strong {
   text-transform: uppercase;
   text-decoration: none;
   text-align: left;
-  color: inherit;
+  color: black;
   font-size: 17.625pt;
   line-height: 24pt;
   margin-top: 17.625pt;
   text-indent: 0;
-  margin-top: 80pt;
+  color: white;
+  display: block;
+  margin-top: 48pt;
 }
 
 /* part title */
-/* line 70, ../sass/partials/line/_headings-masculine.scss */
+/* line 74, ../sass/partials/line/_headings-masculine.scss */
 .PARTTTL {
   -webkit-hyphens: none;
   hyphens: none;
@@ -404,7 +412,7 @@ strong {
 }
 
 /* front matter title */
-/* line 74, ../sass/partials/line/_headings-masculine.scss */
+/* line 78, ../sass/partials/line/_headings-masculine.scss */
 .FMTTL {
   -webkit-hyphens: none;
   hyphens: none;
@@ -413,16 +421,18 @@ strong {
   text-transform: uppercase;
   text-decoration: none;
   text-align: left;
-  color: inherit;
+  color: black;
   font-size: 17.625pt;
   line-height: 24pt;
   margin-top: 17.625pt;
   text-indent: 0;
-  margin-top: 80pt;
+  color: white;
+  display: block;
+  margin-top: 48pt;
 }
 
 /* rear matter title */
-/* line 79, ../sass/partials/line/_headings-masculine.scss */
+/* line 85, ../sass/partials/line/_headings-masculine.scss */
 .RMTTL {
   -webkit-hyphens: none;
   hyphens: none;
@@ -431,16 +441,18 @@ strong {
   text-transform: uppercase;
   text-decoration: none;
   text-align: left;
-  color: inherit;
+  color: black;
   font-size: 17.625pt;
   line-height: 24pt;
   margin-top: 17.625pt;
   text-indent: 0;
-  margin-top: 80pt;
+  color: white;
+  display: block;
+  margin-top: 48pt;
 }
 
 /* a */
-/* line 85, ../sass/partials/line/_headings-masculine.scss */
+/* line 93, ../sass/partials/line/_headings-masculine.scss */
 h4, [class$="A"] {
   -webkit-hyphens: none;
   hyphens: none;
@@ -456,21 +468,21 @@ h4, [class$="A"] {
   text-indent: 0;
   text-transform: none;
 }
-/* line 88, ../sass/partials/line/_headings-masculine.scss */
+/* line 96, ../sass/partials/line/_headings-masculine.scss */
 h4 + ol, [class$="A"] + ol {
   margin-top: 0;
 }
-/* line 89, ../sass/partials/line/_headings-masculine.scss */
+/* line 97, ../sass/partials/line/_headings-masculine.scss */
 h4 + ul, [class$="A"] + ul {
   margin-top: 0;
 }
-/* line 90, ../sass/partials/line/_headings-masculine.scss */
+/* line 98, ../sass/partials/line/_headings-masculine.scss */
 h4 + [class$="B"], [class$="A"] + [class$="B"] {
   margin-top: 0;
 }
 
 /* b */
-/* line 94, ../sass/partials/line/_headings-masculine.scss */
+/* line 102, ../sass/partials/line/_headings-masculine.scss */
 h5, FMB, BMB, RMB, B {
   -webkit-hyphens: none;
   hyphens: none;
@@ -488,25 +500,25 @@ h5, FMB, BMB, RMB, B {
   text-transform: none;
   text-align: left;
 }
-/* line 99, ../sass/partials/line/_headings-masculine.scss */
+/* line 107, ../sass/partials/line/_headings-masculine.scss */
 h5 + ol, FMB + ol, BMB + ol, RMB + ol, B + ol {
   margin-top: 0;
 }
-/* line 100, ../sass/partials/line/_headings-masculine.scss */
+/* line 108, ../sass/partials/line/_headings-masculine.scss */
 h5 + ul, FMB + ul, BMB + ul, RMB + ul, B + ul {
   margin-top: 0;
 }
-/* line 101, ../sass/partials/line/_headings-masculine.scss */
+/* line 109, ../sass/partials/line/_headings-masculine.scss */
 h5 + [class$="C"], FMB + [class$="C"], BMB + [class$="C"], RMB + [class$="C"], B + [class$="C"] {
   margin-top: 0;
 }
-/* line 102, ../sass/partials/line/_headings-masculine.scss */
+/* line 110, ../sass/partials/line/_headings-masculine.scss */
 h5 + p, FMB + p, BMB + p, RMB + p, B + p {
   text-indent: 0;
 }
 
 /*c*/
-/* line 105, ../sass/partials/line/_headings-masculine.scss */
+/* line 113, ../sass/partials/line/_headings-masculine.scss */
 [class$="C"] {
   -webkit-hyphens: none;
   hyphens: none;
@@ -523,20 +535,20 @@ h5 + p, FMB + p, BMB + p, RMB + p, B + p {
   font-size: 10.75pt;
   text-align: left;
 }
-/* line 109, ../sass/partials/line/_headings-masculine.scss */
+/* line 117, ../sass/partials/line/_headings-masculine.scss */
 [class$="C"] + ol {
   margin-top: 0;
 }
-/* line 110, ../sass/partials/line/_headings-masculine.scss */
+/* line 118, ../sass/partials/line/_headings-masculine.scss */
 [class$="C"] + ul {
   margin-top: 0;
 }
-/* line 111, ../sass/partials/line/_headings-masculine.scss */
+/* line 119, ../sass/partials/line/_headings-masculine.scss */
 [class$="C"] + p {
   text-indent: 0;
 }
 
-/* line 113, ../sass/partials/line/_headings-masculine.scss */
+/* line 121, ../sass/partials/line/_headings-masculine.scss */
 .CRUNIN {
   font-family: SAT_regular, serif;
   margin-top: 11.75pt;

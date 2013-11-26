@@ -11,4 +11,5 @@
 }
 *[class*='TXB']{
 @include base-dingbat("");
++ p { text-indent:0; }
 }

@@ -17,7 +17,8 @@
 
 /* title page title h1*/
 .TTLPGTTL {
-	@include base-font-heading($multiplyer:2.75);
+	@include base-font-heading($font-family:SAT_disp_bold, $multiplyer:2.75);
+	letter-spacing: .05em;
 	}
 /* title page subtitle h3*/
 .TTLPGSUB {
@@ -41,6 +42,7 @@
 /* chapter title h2*/
 .CHAPTTL {
 	@include base-font-heading($multiplyer:1.5, $bg-color:black);
+	color:white;
 	display:block;
 	margin-top: 48pt; 
 	+.CHAPSUB {	margin-top:36pt;}
@@ -63,8 +65,10 @@
 }
 /* part num */
 .PARTNUM {
-	@include base-font-heading($font-family: SAT_semibold, $multiplyer: 1.5);
-	margin-top:80pt; 
+	@include base-font-heading($font-family: SAT_semibold, $multiplyer: 1.5, $bg-color:black);
+	color:white;
+	display:block;
+	margin-top: 48pt; 
 }
 /* part title */
 .PARTTTL {
@@ -72,13 +76,17 @@
 }
 /* front matter title */
 .FMTTL {
-	@include base-font-heading($multiplyer: 1.5);
-	margin-top:80pt;
+	@include base-font-heading($multiplyer: 1.5, $bg-color:black);
+	color:white;
+	display:block;
+	margin-top: 48pt; 
 }
 /* rear matter title */
 .RMTTL {
-	@include base-font-heading($multiplyer: 1.5);
-	margin-top:80pt;
+	@include base-font-heading($multiplyer: 1.5, $bg-color:black);
+	color:white;
+	display:block;
+	margin-top: 48pt; 
 }
 
 /* a */

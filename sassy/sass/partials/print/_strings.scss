@@ -1,12 +1,12 @@
 /* set Booktitle, Authortitle and Chaptertitle variables */
-#title h1 {
+.TTLPGTTL {
   string-set: Booktitle content();
 }
 
-div > h2 {
+div > h2:first-of-type {
   string-set: Chaptertitle content();
 }
 
-#title h4 {
+.TTLPGAU span:first-of-type {
   string-set: Authorname content();
 }

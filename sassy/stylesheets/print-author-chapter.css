@@ -85,7 +85,7 @@ body {
 /*left pages */
 @page contents-matter:left {
   @top {
-    content: counter(page,lower-roman) " \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 " string(Chaptertitle);
+    content: counter(page,lower-roman) " \a0 \a0 \a0 ~ \a0 \a0 \a0 " string(Chaptertitle);
     text-align: left;
     font-family: SAT_italic, italic;
     font-size: small;
@@ -95,7 +95,7 @@ body {
 /*right pages */
 @page contents-matter:right {
   @top {
-    content: string(Chaptertitle) " \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 " counter(page,lower-roman);
+    content: string(Chaptertitle) " \a0 \a0 \a0 ~ \a0 \a0 \a0 " counter(page,lower-roman);
     text-align: right;
     font-family: SAT_italic, italic;
     font-size: small;
@@ -138,7 +138,7 @@ body {
 /*left pages */
 @page chap:left {
   @top {
-    content: counter(page) " \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 " string(Booktitle);
+    content: counter(page) " \a0 \a0 \a0 ~ \a0 \a0 \a0 " string(Authorname);
     text-align: left;
     font-family: SAT_italic, italic;
     font-size: small;
@@ -148,7 +148,7 @@ body {
 /*right pages */
 @page chap:right {
   @top {
-    content: string(Chaptertitle) " \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 " counter(page);
+    content: string(Chaptertitle) " \a0 \a0 \a0 ~ \a0 \a0 \a0 " counter(page);
     text-align: right;
     font-family: SAT_italic, italic;
     font-size: small;
@@ -210,7 +210,7 @@ body {
 /*left pages */
 @page rear:left {
   @top {
-    content: counter(page) " \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 " string(Chaptertitle);
+    content: counter(page) " \a0 \a0 \a0 ~ \a0 \a0 \a0 " string(Chaptertitle);
     text-align: left;
     font-family: SAT_italic, italic;
     font-size: small;
@@ -220,7 +220,7 @@ body {
 /*right pages */
 @page rear:right {
   @top {
-    content: string(Chaptertitle) " \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 \a0 " counter(page);
+    content: string(Chaptertitle) " \a0 \a0 \a0 ~ \a0 \a0 \a0 " counter(page);
     text-align: right;
     font-family: SAT_italic, italic;
     font-size: small;

@@ -28,16 +28,16 @@ body {
     footnote-style-position: inside;
   }
 }
-/* contents-matter is all sub section after the contents(toc) */
+/* contents-matter (front-matter) is all sub section after the contents(toc) */
 
 /*left pages */
-@include section-running-head("contents-matter",left) {
+@include section-running-head("contents-matter",left, left) {
       content: $front-matter-header-left;
     }
 
 
 /*right pages */
-@include section-running-head("contents-matter",right) {
+@include section-running-head("contents-matter",right,right) {
       content: $front-matter-header-right;
     }
 
@@ -59,13 +59,13 @@ body {
 /*chapters first page headers and footers */
 /*left pages */
 
-@include section-running-head("chap",left) {
+@include section-running-head("chap",left,left) {
       content: $body-matter-header-left;
     }
 
 /*right pages */
 
-@include section-running-head("chap",right) {
+@include section-running-head("chap",right,right) {
       content: $body-matter-header-right;
     }
 
@@ -94,13 +94,13 @@ body {
 /*define rear page groups */
 /*left pages */
 
-@include section-running-head("rear",left) {
+@include section-running-head("rear",left,left) {
       content: $rear-matter-header-left;
     }
 
 /*right pages */
 
-@include section-running-head("rear",right) {
+@include section-running-head("rear",right,right) {
       content: $rear-matter-header-right;
     }
 
