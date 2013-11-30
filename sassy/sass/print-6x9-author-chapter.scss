@@ -18,6 +18,11 @@ $section-header-margin-top: $doc-trim-height * .22;
 $section-firstdoc-margin-bottom: 1in;
 $fn-symbols: counter(footnote, symbols("*", "**", "***", "****", "\2020", "\2021", "\00A7", "1", "2"));
 
+// font set up for running heads through out the book 
+$doc-rh-font-family: SAT_italic, italic;
+$doc-rh-font-size: small;
+$doc-rh-margin-top: 0.5in;
+
 $front-matter-header-left: counter(page, lower-roman) " \a0 \a0 \a0 ~ \a0 \a0 \a0 " string(Chaptertitle);
 $front-matter-header-right: string(Chaptertitle) " \a0 \a0 \a0 ~ \a0 \a0 \a0 " counter(page, lower-roman);
 $front-matter-header-first: counter(page, lower-roman);

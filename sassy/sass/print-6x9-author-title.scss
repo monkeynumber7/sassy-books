@@ -1,0 +1,62 @@
+/* <link href="/stylesheets/base.css" rel="stylesheet" type="text/css" />  */
+//import mixins and initial variabls
+@import 'modules/print/runningheads';
+
+//variables set here for each template
+$doc-widows: 2;
+$doc-orphans: 2;
+$doc-trim-width: 6in;
+$doc-trim-height: 9in;
+$doc-margin-top: 1in;
+$doc-margin-right: 0.75in;
+$doc-margin-bottom: 0.5in;
+$doc-margin-left: 0.75in;
+$doc-bleed: 10pt;
+$doc-outside-trim: 1in;
+
+$section-header-margin-top: $doc-trim-height * .22;
+$section-firstdoc-margin-bottom: 1in;
+$fn-symbols: counter(footnote, symbols("*", "**", "***", "****", "\2020", "\2021", "\00A7", "1", "2"));
+
+// font set up for running heads through out the book 
+$doc-rh-font-family: SAT_disp_regular;
+$doc-rh-font-size: small;
+$doc-rh-margin-top: 0.5in;
+
+$front-matter-header-left: counter(page, lower-roman) " \a0 \a0 \a0 – \a0 \a0 \a0 " string(Chaptertitle); 
+$front-matter-header-right: string(Chaptertitle) " \a0 \a0 \a0 – \a0 \a0 \a0 " counter(page, lower-roman);
+$front-matter-header-first: counter(page, lower-roman);
+
+$body-matter-header-left:  counter(page) " \a0 \a0 \a0 – \a0 \a0 \a0 " string(Authorname);
+$body-matter-header-right: string(Booktitle) " \a0 \a0 \a0 – \a0 \a0 \a0 " counter(page);
+$body-matter-header-first: counter(page);
+
+$rear-matter-header-left: counter(page) " \a0 \a0 \a0 – \a0 \a0 \a0 " string(Chaptertitle);
+$rear-matter-header-right: string(Chaptertitle) " \a0 \a0 \a0 – \a0 \a0 \a0 " counter(page);
+$rear-matter-header-first: counter(page);
+
+//partial imports here
+@import 'partials/print/all';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+	

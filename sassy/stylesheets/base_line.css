@@ -631,6 +631,11 @@ ul {
   list-style-type: none;
 }
 
+/* line 5, ../sass/partials/line/_lists.scss */
+.BuLst, .BuLst1st, .BuLstMd, .BuLstLs {
+  indent: 20pt;
+}
+
 /* line 3, ../sass/partials/line/_toc.scss */
 #contents {
   margin: 0;

@@ -1,0 +1,359 @@
+@charset "UTF-8";
+/* <link href="/stylesheets/base.css" rel="stylesheet" type="text/css" />  */
+/* positioning/ vertical centering */
+/*center vertically and horizontally */
+/* line 2, ../sass/partials/print/_positioning.scss */
+#title, #half-title, #epigraph {
+  position: absolute;
+  margin: auto;
+  text-align: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+/* position on the bottom */
+/* line 13, ../sass/partials/print/_positioning.scss */
+#copyright {
+  position: absolute;
+  bottom: 0;
+}
+
+/* toc */
+/* line 19, ../sass/partials/print/_positioning.scss */
+#contents {
+  margin-top: 1.98in;
+}
+
+/* page and list counters and counter resets */
+/* line 1, ../sass/partials/print/_counters.scss */
+body {
+  counter-reset: ChapterNo PartNo;
+}
+
+/*incremnt chapter count at the heading of each chapter */
+/* line 6, ../sass/partials/print/_counters.scss */
+#body-matter .chapter h2 {
+  counter-increment: ChapterNo;
+}
+
+/*incremnt part count at the heading of each part */
+/* line 11, ../sass/partials/print/_counters.scss */
+#body-matter .part h2 {
+  counter-increment: PartNo;
+}
+
+/*this resets the page counter so page 1 starts on chapter 1 */
+/* line 15, ../sass/partials/print/_counters.scss */
+#body-matter {
+  counter-reset: page 1;
+}
+
+/* page setups / running heads */
+/* CSS Paged Media Module */
+/* line 2, ../sass/partials/print/_pages.scss */
+body {
+  widows: 2;
+  orphans: 2;
+}
+
+@page {
+  size: 6in 9in;
+  margin: 1in 0.75in 0.5in;
+  @top {
+    margin-top: 0.5in;
+}
+}
+
+@page {
+  bleed: 10pt;
+  marks: cross crop;
+  prince-trim: 1in;
+}
+
+@page {
+  counter-reset: footnote;
+  @footnotes {
+    border-top: solid black thin;
+    prince-border-clip: 2in;
+    padding-top: 8pt;
+    footnote-style-position: inside;
+}
+}
+
+/* contents-matter (front-matter) is all sub section after the contents(toc) */
+/*left pages */
+@page contents-matter:left {
+  @top {
+    content: counter(page,lower-roman) " \a0 \a0 \a0 – \a0 \a0 \a0 " string(Chaptertitle);
+    text-align: left;
+    font-family: SAT_disp_regular;
+    font-size: small;
+}
+}
+
+/*right pages */
+@page contents-matter:right {
+  @top {
+    content: string(Chaptertitle) " \a0 \a0 \a0 – \a0 \a0 \a0 " counter(page,lower-roman);
+    text-align: right;
+    font-family: SAT_disp_regular;
+    font-size: small;
+}
+}
+
+/*first page of each front matter sub section */
+@page contents-matter:first {
+  margin-bottom: 1in;
+  @bottom {
+    content: counter(page,lower-roman);
+    font-family: SAT_disp_regular;
+    font-size: small;
+}
+
+  @top {
+    content: "";
+}
+}
+
+@page contents-matter:blank {
+  @bottom {
+    content: "";
+}
+
+  @top {
+    content: "";
+}
+}
+
+/* define front matter as contents-matter not sectons without headers though*/
+/* line 53, ../sass/partials/print/_pages.scss */
+#front-matter > div:not(#title):not(#half-title):not(#copyright):not(#epigraph):not(#dedication) {
+  page: contents-matter;
+  prince-page-group: start;
+}
+
+/* chap is all chapters */
+/*chapters first page headers and footers */
+/*left pages */
+@page chap:left {
+  @top {
+    content: counter(page) " \a0 \a0 \a0 – \a0 \a0 \a0 " string(Authorname);
+    text-align: left;
+    font-family: SAT_disp_regular;
+    font-size: small;
+}
+}
+
+/*right pages */
+@page chap:right {
+  @top {
+    content: string(Booktitle) " \a0 \a0 \a0 – \a0 \a0 \a0 " counter(page);
+    text-align: right;
+    font-family: SAT_disp_regular;
+    font-size: small;
+}
+}
+
+@page chap:first {
+  margin-bottom: 1in;
+  @bottom {
+    content: counter(page);
+    font-family: SAT_disp_regular;
+    font-size: small;
+}
+
+  @top {
+    content: "";
+}
+}
+
+@page chap:blank {
+  @bottom {
+    content: "";
+}
+
+  @top {
+    content: "";
+}
+}
+
+/* define chapter pages */
+/* line 79, ../sass/partials/print/_pages.scss */
+#body-matter .chapter {
+  page: chap;
+  prince-page-group: start;
+}
+
+/* part is the part divider */
+@page part:first {
+  margin-bottom: 1in;
+  @bottom {
+    content: "";
+    font-family: SAT_disp_regular;
+    font-size: small;
+}
+
+  @top {
+    content: "";
+}
+}
+
+/*define part */
+/* line 89, ../sass/partials/print/_pages.scss */
+#body-matter .part {
+  page: part;
+  prince-page-group: start;
+}
+
+/*define rear page groups */
+/*left pages */
+@page rear:left {
+  @top {
+    content: counter(page) " \a0 \a0 \a0 – \a0 \a0 \a0 " string(Chaptertitle);
+    text-align: left;
+    font-family: SAT_disp_regular;
+    font-size: small;
+}
+}
+
+/*right pages */
+@page rear:right {
+  @top {
+    content: string(Chaptertitle) " \a0 \a0 \a0 – \a0 \a0 \a0 " counter(page);
+    text-align: right;
+    font-family: SAT_disp_regular;
+    font-size: small;
+}
+}
+
+@page rear:first {
+  margin-bottom: 1in;
+  @bottom {
+    content: counter(page);
+    font-family: SAT_disp_regular;
+    font-size: small;
+}
+
+  @top {
+    content: "";
+}
+}
+
+@page rear:blank {
+  @bottom {
+    content: "";
+}
+
+  @top {
+    content: "";
+}
+}
+
+/* line 114, ../sass/partials/print/_pages.scss */
+#rear-matter > div {
+  page: rear;
+  prince-page-group: start;
+}
+
+/* Title Author Chapter Strings used in headers */
+/* set Booktitle, Authortitle and Chaptertitle variables */
+/* line 2, ../sass/partials/print/_strings.scss */
+.TTLPGTTL {
+  string-set: Booktitle content();
+}
+
+/* line 6, ../sass/partials/print/_strings.scss */
+div > h2:first-of-type {
+  string-set: Chaptertitle content();
+}
+
+/* line 10, ../sass/partials/print/_strings.scss */
+.TTLPGAU span:first-of-type {
+  string-set: Authorname content();
+}
+
+/* breaks for sections starting on right or left page */
+/*start sections and chapters on right page */
+/* line 2, ../sass/partials/print/_breaks.scss */
+#front-matter > div, #body-matter > div, #rear-matter > div {
+  page-break-before: right;
+}
+
+/* copyright on left or right page just make sure it breaks before */
+/* line 7, ../sass/partials/print/_breaks.scss */
+div#copyright {
+  page-break-before: always;
+}
+
+/* foot and end notes */
+/* footend notes */
+/* line 2, ../sass/partials/print/_notes.scss */
+p .FN {
+  display: prince-footnote;
+  counter-increment: footnote;
+  color: black;
+  footnote-style-position: inside;
+}
+
+/* line 9, ../sass/partials/print/_notes.scss */
+body span.FN span, li span span {
+  display: block;
+}
+
+/* line 13, ../sass/partials/print/_notes.scss */
+body span.FN span.NFIRST {
+  display: inline;
+}
+
+/* line 17, ../sass/partials/print/_notes.scss */
+body span.EN span:before, body span.FN span:before {
+  content: "";
+}
+
+/* line 21, ../sass/partials/print/_notes.scss */
+body span.NFIRST:before, body span.NTEXT:before, body span.NFIRST:after, body span.NTEXT:after {
+  content: "";
+}
+
+/* line 25, ../sass/partials/print/_notes.scss */
+.FN::footnote-call {
+  content: counter(footnote,symbols("*", "**", "***", "****", "\2020", "\2021", "\00A7", "1", "2"));
+  font-size: 80%;
+  vertical-align: super;
+  line-height: none;
+}
+
+/* line 32, ../sass/partials/print/_notes.scss */
+.FN::footnote-marker {
+  content: counter(footnote,symbols("*", "**", "***", "****", "\2020", "\2021", "\00A7", "1", "2"));
+  font-weight: bold;
+  margin-right: 4pt;
+}
+
+/*for illustration list */
+/* line 39, ../sass/partials/print/_notes.scss */
+#illustrations ul a:after {
+  content: leader(" ") " " target-counter(attr(href, url), page);
+}
+
+/* pdf bookmarks */
+/*pdf bookmarks */
+/* line 2, ../sass/partials/print/_pdfbookmarks.scss */
+div > h2 {
+  bookmark-level: 1;
+  bookmark-state: closed;
+}
+
+/* line 7, ../sass/partials/print/_pdfbookmarks.scss */
+h3, h4, h5, h6 {
+  prince-bookmark-level: none;
+}
+
+/* line 11, ../sass/partials/print/_pdfbookmarks.scss */
+#copyright {
+  bookmark-level: 1;
+  bookmark-state: closed;
+  bookmark-label: "Copyright Page";
+}
