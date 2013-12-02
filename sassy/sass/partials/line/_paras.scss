@@ -1,4 +1,4 @@
-@mixin base-text-para-ext {
+%base-text-para-ext {
 	font-family:SAT_regular, serif;
 	font-size:11pt;
 	line-height: 16pt;
@@ -46,6 +46,7 @@
 	color: gray;
 	line-height: 14pt;
 	float: left;
+	margin-left: -10px;
 	page-break-inside: avoid;
 	width: 150px;
 	text-align: left;
@@ -54,19 +55,19 @@
 	font-size: 11pt;
 }
 .EXT {
-	@include base-text-para-ext;
+	@extend %base-text-para-ext;
 }
 .EXT1st {
-	@include base-text-para-ext;
+	@extend %base-text-para-ext;
 	margin-bottom:0px;
 }
 .EXTMd {
-	@include base-text-para-ext;
+	@extend %base-text-para-ext;
 	margin-bottom:0px;
 	text-indent:12pt;
 }
 .EXTLs {
-	@include base-text-para-ext;
+	@extend %base-text-para-ext;
 	text-indent:12pt;
 }
 

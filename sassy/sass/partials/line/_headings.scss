@@ -1,18 +1,41 @@
-
-@mixin base-font-heading ($font-family:SAT_regular, $multiplyer:1,$bg-color:inherit){
+// If something is the same for all headings put it here
+%base-heading {
 	-webkit-hyphens:none;
 	hyphens:none;
-	font-family:#{$font-family};
-	letter-spacing: .15em;
-	text-transform:uppercase;
 	text-decoration:none;
-	text-align: center;
-	background-color:$bg-color;
-	font-size:$base-font-size * $multiplyer;
-	line-height: $base-line-height * $multiplyer;
-	margin-top: $base-font-size * $multiplyer;
+	//change from center to left
+	display:block;
 	text-indent:0;
-
+	page-break-inside: avoid;
+}
+// if something will change across heading put it here
+@mixin base-font-heading ($font-family:SAT_regular, 
+						  $multiplyer:1,
+						  $font-size:$base-font-size * $multiplyer,
+						  $line-height: $base-line-height * $multiplyer,
+						  $margin-top: $base-font-size * $multiplyer,
+						  $letter-spacing: .15em,
+						  $text-transform:uppercase,
+						  $text-align: center){
+	
+	font-family:#{$font-family};
+	font-size:$font-size;
+	line-height: $line-height;
+	margin-top: $margin-top;
+	letter-spacing: $letter-spacing;
+	text-transform:$text-transform;
+	text-align: $text-align;
+	@extend %base-heading;
+}
+%title-next-sibling {
+	+ p { text-indent:0; margin-top:$base-line-height-dub;}
+}
+%heading-next-sibling {
+	+ ol {margin-top:0;}
+	+ ul {margin-top:0;}
+	+ [class$="B"] {  margin-top: 0;}
+	+ [class$="C"]{	margin-top: 0;}
+	+ p { text-indent: 0;  margin-top: $base-line-height-dub;}
 }
 /* title page title h1*/
 .TTLPGTTL {
@@ -20,49 +43,40 @@
 	}
 /* title page subtitle h3*/
 .TTLPGSUB {
-	@include base-font-heading('SAT_italic, italic',1.7);
-	letter-spacing: .1em;
+	@include base-font-heading('SAT_italic, italic',$multiplyer:1.7, $letter-spacing: .1em);
+	
 }
 /* title page author h4*/
 .TTLPGAU {
-	@include base-font-heading($multiplyer:1.5);
-	margin-top:72pt;
-		
+	@include base-font-heading($multiplyer:1.5, $margin-top: $base-line-height-trip);
+	
 }
 .CONTRIB {
 	@include base-font-heading;
 }
 /* half title page title h1*/
 .HTTLPGTTL  {
-	@include base-font-heading($multiplyer:2.25);
-	margin-top: 48pt;
+	@include base-font-heading($multiplyer:2.25, $margin-top: $base-line-height-trip);
+
 }
 /* chapter title h2*/
 .CHAPTTL {
 	@include base-font-heading($multiplyer:1.5);
-	margin-top: 48pt; 
-	+.CHAPSUB {	margin-top:36pt;}
-	+ p { text-indent:0;}
-	
+	@extend %title-next-sibling;
 }
 /* chapter subtitle h3*/
 .CHAPSUB {
-	@include base-font-heading;	
-	font-size:11pt;
-	+ p { text-indent:0; margin-top:36pt;}
+	@include base-font-heading($margin-top:$base-line-height-dub);	
+	@extend %title-next-sibling;
 }
 /* chapter number h6*/
 .CHAPNUM {
-	@include base-font-heading($multiplyer:1.33);	
-	text-align:center;
-	font-family: SAT_semibold; 
-	margin-top: 48pt;
-	text-transform: none
+	@include base-font-heading($font-family: SAT_semibold, $multiplyer:1.33, $margin-top:$base-line-height-trip);	
 }
 /* part num */
 .PARTNUM {
-	@include base-font-heading($font-family: SAT_semibold, $multiplyer: 1.5);
-	margin-top:80pt; 
+	@include base-font-heading($font-family: SAT_semibold, $multiplyer: 1.5, $margin-top:$base-line-height-trip);
+
 }
 /* part title */
 .PARTTTL {
@@ -70,47 +84,34 @@
 }
 /* front matter title */
 .FMTTL {
-	@include base-font-heading($multiplyer: 1.5);
-	margin-top:80pt;
+	@include base-font-heading($multiplyer: 1.5, $margin-top:$base-line-height-trip);
+
 }
 /* rear matter title */
 .RMTTL {
-	@include base-font-heading($multiplyer: 1.5);
-	margin-top:80pt;
-}
+	@include base-font-heading($multiplyer: 1.5, $margin-top:$base-line-height-trip);
 
+}
 /* a */
 h4, [class$="A"] {
 	@include base-font-heading;
-	text-transform:none;
-	+ ol {margin-top:0;}
-	+ ul {margin-top:0;}
-	+ [class$="B"] {  margin-top: 0;}
+@extend %heading-next-sibling;
+	
 }
 
 /* b */
 h5, FMB, BMB, RMB, B {
-	@include base-font-heading('SAT_italic, serif');
-	margin-top:23pt;
-	text-transform:none;
-	text-align:left;
-	+ ol {	margin-top:0;}
-	+ ul {	margin-top:0;}
-	+ [class$="C"]{	margin-top: 0;}
-	+ p { text-indent: 0;}
+	@include base-font-heading('SAT_italic, serif', $margin-top: $base-line-height-dub);
+	@extend %heading-next-sibling;
+
 }
 /*c*/
 [class$="C"] {
-	@include base-font-heading;
-	font-size:10.75pt;
-	text-align:left;
-	+ ol {	margin-top:0;}
-	+ ul {	margin-top:0;}
-	+ p {  text-indent: 0;	}
+	@include base-font-heading($multiplyer: .9);
+	@extend %heading-next-sibling;
 }
 .CRUNIN {
-	font-family:SAT_regular, serif;
-	margin-top:$base-font-size;;
+	margin-top:$base-line-height;
 	text-align:justify;
 	text-indent:0px;
 }
