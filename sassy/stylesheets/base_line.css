@@ -508,12 +508,12 @@ a:link {
 /* line 7, ../sass/partials/line/_links.scss */
 a:visited {
   text-decoration: none;
-  color: black;
+  color: inherit;
 }
 
 /* line 8, ../sass/partials/line/_links.scss */
 a:hover {
-  color: black;
+  color: inherit;
 }
 
 /* line 1, ../sass/partials/line/_lists.scss */

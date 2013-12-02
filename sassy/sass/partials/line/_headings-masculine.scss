@@ -22,12 +22,18 @@
 	font-family:#{$font-family};
 	font-size:$font-size;
 	line-height: $line-height;
+	text-align: $text-align;
 	margin-top: $margin-top;
 	letter-spacing: $letter-spacing;
 	text-transform:$text-transform;
 	@extend %base-heading;
 }
+%masculine-heading {
+	background-color:black;
+	color:white;
+	padding-left:5pt;
 
+}
 /* title page title h1*/
 .TTLPGTTL {
 	@include base-font-heading($font-family:SAT_disp_bold, $multiplyer:2.75, $letter-spacing:.05em, $text-align: left);
@@ -36,7 +42,7 @@
 /* title page subtitle h3*/
 .TTLPGSUB {
 	@include base-font-heading('SAT_italic, italic',1.7, $letter-spacing: .1em, $margin-top:72pt, $text-align: left);
-
+	@extend %masculine-heading;
 }
 /* title page author h4*/
 .TTLPGAU {
@@ -52,31 +58,29 @@
 	@include base-font-heading($multiplyer:2.25, $margin-top: 48pt, $text-align: left);
 	
 }
+%title-next-sibling {
+	+ p { text-indent:0; margin-top:$base-line-height-dub;}
+}
 /* chapter title h2*/
 .CHAPTTL {
 	@include base-font-heading($multiplyer:1.5, $margin-top: 48pt, $text-align: left);
-	background-color:black;
-	color:white;
-	display:block;
-	+.CHAPSUB {	margin-top:$base-line-height-dub;}
-	+ p { text-indent:0;}
-	
+	@extend %masculine-heading;
+	@extend %title-next-sibling;
 }
 /* chapter subtitle h3*/
 .CHAPSUB {
 	@include base-font-heading;	
-	+ p { text-indent:0; margin-top:$base-line-height-dub;}
+	@extend %title-next-sibling;
 }
 /* chapter number h6*/
 .CHAPNUM {
 	@include base-font-heading($font-family: SAT_semibold, $multiplyer:1.33, $margin-top: 48pt);	
-	
-	 
+ 
 }
 /* part num */
 .PARTNUM {
 	@include base-font-heading($font-family: SAT_semibold, $multiplyer: 1.5, $margin-top: 48pt);
-	color:white;
+	@extend %masculine-heading;
 	 
 }
 /* part title */
@@ -85,16 +89,14 @@
 }
 /* front matter title */
 .FMTTL {
-	@include base-font-heading($multiplyer: 1.5, $margin-top: 48pt);
-	background-color:black;
-	color:white;
+	@include base-font-heading($multiplyer: 1.5, $margin-top: 48pt, $text-align: left);
+	@extend %masculine-heading;
 	 
 }
 /* rear matter title */
 .RMTTL {
-	@include base-font-heading($multiplyer: 1.5, $margin-top: 48pt);
-	background-color:black;
-	color:white;
+	@include base-font-heading($multiplyer: 1.5, $margin-top: 48pt, $text-align: left);
+	@extend %masculine-heading;
 
 }
 %sib-after {
