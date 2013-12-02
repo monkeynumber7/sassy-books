@@ -6,8 +6,6 @@
 //@import 'modules/line/all';
 
 //variables set here for each template
-$base-font-family: SAT_regular, sarif;
-$base-text-align: justify;
 
 
 $base-font-size: 11.75pt;
@@ -26,11 +24,11 @@ $caption-font-size: $base-font-size * .85;
 $caption-line-height: $base-line-height * .8125;
 
 body {
-	font-family: $base-font-family;
+	font-family: SAT_regular;
 	font-size:$base-font-size;
 	line-height: $base-line-height;
 	text-indent: $base-text-indent;
-	text-align: $base-text-align;
+	text-align: justify;
 	margin: 0;
 }
 

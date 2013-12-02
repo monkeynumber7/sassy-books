@@ -3,8 +3,7 @@
 	-webkit-hyphens:none;
 	hyphens:none;
 	text-decoration:none;
-	
-	
+
 	display:block;
 	text-indent:0;
 }
@@ -99,7 +98,7 @@
 	@extend %masculine-heading;
 
 }
-%sib-after {
+%heading-next-sibling {
 	+ ol {margin-top:0;}
 	+ ul {margin-top:0;}
 	+ [class$="B"] {  margin-top: 0;}
