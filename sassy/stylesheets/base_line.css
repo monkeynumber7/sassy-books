@@ -64,9 +64,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 30, ../sass/base_line.scss */
+/* line 35, ../sass/base_line.scss */
 body {
   font-family: SAT_regular;
+  -webkit-hyphens: auto;
+  hyphens: auto;
   font-size: 11.75pt;
   line-height: 16pt;
   text-indent: 15pt;
@@ -218,7 +220,6 @@ strong {
 .TTLPGTTL, .TTLPGSUB, .TTLPGAU, .CONTRIB, .HTTLPGTTL, .CHAPTTL, .CHAPSUB, .CHAPNUM, .PARTNUM, .PARTTTL, .FMTTL, .RMTTL, h4, [class$="A"], h5, FMB, BMB, RMB, B, [class$="C"] {
   -webkit-hyphens: none;
   hyphens: none;
-  display: block;
   text-indent: 0;
   page-break-inside: avoid;
 }
@@ -528,17 +529,18 @@ ul {
 /* line 1, ../sass/partials/line/_toc.scss */
 .CPYINFO, #copyright p {
   -webkit-hyphens: none;
+  hyphens: none;
   color: Black;
-  font-family: SAT_regular, serif;
+  font-family: SAT_regular;
   text-indent: 0;
   font-size: 8.8125pt;
   line-height: 12pt;
   text-align: left;
-  margin-left: 16pt;
 }
 
-/* line 13, ../sass/partials/line/_toc.scss */
+/* line 14, ../sass/partials/line/_toc.scss */
 .DED {
+  -webkit-hyphens: none;
   hyphens: none;
   font-family: SAT_italic;
   font-size: 1em;
@@ -552,30 +554,30 @@ ul {
   text-indent: 0;
 }
 
-/* line 28, ../sass/partials/line/_toc.scss */
+/* line 29, ../sass/partials/line/_toc.scss */
 #contents {
   margin: 0;
 }
 
-/* line 31, ../sass/partials/line/_toc.scss */
+/* line 32, ../sass/partials/line/_toc.scss */
 #contents .toc_bd {
   margin: 0;
   padding: 0;
 }
 
-/* line 35, ../sass/partials/line/_toc.scss */
+/* line 36, ../sass/partials/line/_toc.scss */
 #contents .toc_fm {
   margin: 0;
   padding: 0;
 }
 
-/* line 39, ../sass/partials/line/_toc.scss */
+/* line 40, ../sass/partials/line/_toc.scss */
 #contents .toc_rm {
   margin: 20pt 0 0 0;
   padding: 0;
 }
 
-/* line 43, ../sass/partials/line/_toc.scss */
+/* line 44, ../sass/partials/line/_toc.scss */
 li.TOCFM {
   padding-right: 16pt;
   font-size: 1em;
@@ -585,7 +587,7 @@ li.TOCFM {
   text-indent: 0em;
 }
 
-/* line 51, ../sass/partials/line/_toc.scss */
+/* line 52, ../sass/partials/line/_toc.scss */
 li.TOCRM {
   padding-right: 16pt;
   font-size: 1em;
@@ -595,7 +597,7 @@ li.TOCRM {
   text-indent: 0em;
 }
 
-/* line 59, ../sass/partials/line/_toc.scss */
+/* line 60, ../sass/partials/line/_toc.scss */
 li.chap.TOCCHAP {
   padding-right: 16pt;
   font-size: 1em;
@@ -605,7 +607,7 @@ li.chap.TOCCHAP {
   text-indent: -40pt;
 }
 
-/* line 67, ../sass/partials/line/_toc.scss */
+/* line 68, ../sass/partials/line/_toc.scss */
 li.part.TOCPART {
   padding-top: 0;
   text-indent: 0;
@@ -615,14 +617,14 @@ li.part.TOCPART {
   text-indent: 0;
 }
 
-/* line 75, ../sass/partials/line/_toc.scss */
+/* line 76, ../sass/partials/line/_toc.scss */
 #contents ul {
   text-align: left;
   list-style-type: none;
   margin-top: 2em;
 }
 
-/* line 80, ../sass/partials/line/_toc.scss */
+/* line 81, ../sass/partials/line/_toc.scss */
 .TOCPART span.num {
   display: block;
   font-weight: bold;
@@ -634,7 +636,7 @@ li.part.TOCPART {
   font-size: 1em;
 }
 
-/* line 90, ../sass/partials/line/_toc.scss */
+/* line 91, ../sass/partials/line/_toc.scss */
 .TOCCHAP span.num {
   display: inline-block;
   width: 32pt;
@@ -647,7 +649,7 @@ li.part.TOCPART {
   font-size: 1em;
 }
 
-/* line 101, ../sass/partials/line/_toc.scss */
+/* line 102, ../sass/partials/line/_toc.scss */
 .TOCCHAP {
   -epub-hyphens: none;
   -webkit-hyphens: none;
@@ -660,25 +662,25 @@ li.part.TOCPART {
   text-indent: 0px;
 }
 
-/* line 112, ../sass/partials/line/_toc.scss */
+/* line 113, ../sass/partials/line/_toc.scss */
 .TOCPART a {
   -webkit-hyphens: none;
   text-transform: uppercase;
   letter-spacing: .15em;
 }
 
-/* line 117, ../sass/partials/line/_toc.scss */
+/* line 118, ../sass/partials/line/_toc.scss */
 .TOCCHAP a {
   -webkit-hyphens: none;
 }
 
-/* line 120, ../sass/partials/line/_toc.scss */
+/* line 121, ../sass/partials/line/_toc.scss */
 .TOCFM a {
   -webkit-hyphens: none;
   font-style: italic;
 }
 
-/* line 124, ../sass/partials/line/_toc.scss */
+/* line 125, ../sass/partials/line/_toc.scss */
 .TOCRM a {
   -webkit-hyphens: none;
   font-style: italic;
@@ -869,17 +871,18 @@ ul.toc_bd_list {
 /* line 1, ../sass/partials/line/_toc.scss */
 .CPYINFO, #copyright p {
   -webkit-hyphens: none;
+  hyphens: none;
   color: Black;
-  font-family: SAT_regular, serif;
+  font-family: SAT_regular;
   text-indent: 0;
   font-size: 8.8125pt;
   line-height: 12pt;
   text-align: left;
-  margin-left: 16pt;
 }
 
-/* line 13, ../sass/partials/line/_toc.scss */
+/* line 14, ../sass/partials/line/_toc.scss */
 .DED {
+  -webkit-hyphens: none;
   hyphens: none;
   font-family: SAT_italic;
   font-size: 1em;
@@ -893,30 +896,30 @@ ul.toc_bd_list {
   text-indent: 0;
 }
 
-/* line 28, ../sass/partials/line/_toc.scss */
+/* line 29, ../sass/partials/line/_toc.scss */
 #contents {
   margin: 0;
 }
 
-/* line 31, ../sass/partials/line/_toc.scss */
+/* line 32, ../sass/partials/line/_toc.scss */
 #contents .toc_bd {
   margin: 0;
   padding: 0;
 }
 
-/* line 35, ../sass/partials/line/_toc.scss */
+/* line 36, ../sass/partials/line/_toc.scss */
 #contents .toc_fm {
   margin: 0;
   padding: 0;
 }
 
-/* line 39, ../sass/partials/line/_toc.scss */
+/* line 40, ../sass/partials/line/_toc.scss */
 #contents .toc_rm {
   margin: 20pt 0 0 0;
   padding: 0;
 }
 
-/* line 43, ../sass/partials/line/_toc.scss */
+/* line 44, ../sass/partials/line/_toc.scss */
 li.TOCFM {
   padding-right: 16pt;
   font-size: 1em;
@@ -926,7 +929,7 @@ li.TOCFM {
   text-indent: 0em;
 }
 
-/* line 51, ../sass/partials/line/_toc.scss */
+/* line 52, ../sass/partials/line/_toc.scss */
 li.TOCRM {
   padding-right: 16pt;
   font-size: 1em;
@@ -936,7 +939,7 @@ li.TOCRM {
   text-indent: 0em;
 }
 
-/* line 59, ../sass/partials/line/_toc.scss */
+/* line 60, ../sass/partials/line/_toc.scss */
 li.chap.TOCCHAP {
   padding-right: 16pt;
   font-size: 1em;
@@ -946,7 +949,7 @@ li.chap.TOCCHAP {
   text-indent: -40pt;
 }
 
-/* line 67, ../sass/partials/line/_toc.scss */
+/* line 68, ../sass/partials/line/_toc.scss */
 li.part.TOCPART {
   padding-top: 0;
   text-indent: 0;
@@ -956,14 +959,14 @@ li.part.TOCPART {
   text-indent: 0;
 }
 
-/* line 75, ../sass/partials/line/_toc.scss */
+/* line 76, ../sass/partials/line/_toc.scss */
 #contents ul {
   text-align: left;
   list-style-type: none;
   margin-top: 2em;
 }
 
-/* line 80, ../sass/partials/line/_toc.scss */
+/* line 81, ../sass/partials/line/_toc.scss */
 .TOCPART span.num {
   display: block;
   font-weight: bold;
@@ -975,7 +978,7 @@ li.part.TOCPART {
   font-size: 1em;
 }
 
-/* line 90, ../sass/partials/line/_toc.scss */
+/* line 91, ../sass/partials/line/_toc.scss */
 .TOCCHAP span.num {
   display: inline-block;
   width: 32pt;
@@ -988,7 +991,7 @@ li.part.TOCPART {
   font-size: 1em;
 }
 
-/* line 101, ../sass/partials/line/_toc.scss */
+/* line 102, ../sass/partials/line/_toc.scss */
 .TOCCHAP {
   -epub-hyphens: none;
   -webkit-hyphens: none;
@@ -1001,25 +1004,25 @@ li.part.TOCPART {
   text-indent: 0px;
 }
 
-/* line 112, ../sass/partials/line/_toc.scss */
+/* line 113, ../sass/partials/line/_toc.scss */
 .TOCPART a {
   -webkit-hyphens: none;
   text-transform: uppercase;
   letter-spacing: .15em;
 }
 
-/* line 117, ../sass/partials/line/_toc.scss */
+/* line 118, ../sass/partials/line/_toc.scss */
 .TOCCHAP a {
   -webkit-hyphens: none;
 }
 
-/* line 120, ../sass/partials/line/_toc.scss */
+/* line 121, ../sass/partials/line/_toc.scss */
 .TOCFM a {
   -webkit-hyphens: none;
   font-style: italic;
 }
 
-/* line 124, ../sass/partials/line/_toc.scss */
+/* line 125, ../sass/partials/line/_toc.scss */
 .TOCRM a {
   -webkit-hyphens: none;
   font-style: italic;

@@ -16,6 +16,7 @@ $base-text-indent: 15pt;
 $base-padding: $base-line-height * .375;
 
 $base-half-line-space: $base-line-height / 2;
+$base-single-line-space: $base-line-height;
 $base-two-line-space: $base-line-height * 2; 
 $base-three-line-space: $base-line-height * 3;
 
@@ -27,8 +28,14 @@ $caption-line-height: $base-line-height * .8125;
 
 $index-indent: 20pt;
 
+%font-transform{
+	$text-transform:uppercase;
+	$letter-spacing: .1em;
+}
 %font-body{
 	font-family: SAT_regular;
+	-webkit-hyphens:auto;
+	hyphens:auto;
 	font-size:$base-font-size;
 	line-height: $base-line-height;
 	text-indent: $base-text-indent;
@@ -41,6 +48,7 @@ $index-indent: 20pt;
 	text-indent: -1 * $index-indent;
 	margin-left: $index-indent;
 }
+
 %font-rear{
 	font-size:$base-font-size * .85;
 	line-height: $base-line-height *.75;

@@ -1,17 +1,18 @@
 .CPYINFO, #copyright p {
 
 	-webkit-hyphens:none;
+	hyphens:none;
 	color:Black;
-	font-family:SAT_regular, serif;
+	font-family:SAT_regular;
 	text-indent:0;
 	font-size:$base-font-size * .75;
 	line-height: $base-line-height * .75;
 	text-align:left;
-	margin-left:16pt;
+
 }
 
 .DED {
-
+	-webkit-hyphens:none;
 	hyphens:none;
 	font-family:SAT_italic;
 	font-size:1em;
