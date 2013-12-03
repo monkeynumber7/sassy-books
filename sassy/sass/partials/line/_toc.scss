@@ -1,4 +1,29 @@
+.CPYINFO, #copyright p {
 
+	-webkit-hyphens:none;
+	color:Black;
+	font-family:SAT_regular, serif;
+	text-indent:0;
+	font-size:$base-font-size * .75;
+	line-height: $base-line-height * .75;
+	text-align:left;
+	margin-left:16pt;
+}
+
+.DED {
+
+	hyphens:none;
+	font-family:SAT_italic;
+	font-size:1em;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:1.2;
+	margin:0 0 0 0;
+	text-align:center;
+	text-decoration:none;
+	text-indent:0;
+}
 
 #contents {
 	margin: 0;

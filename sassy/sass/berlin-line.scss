@@ -14,8 +14,9 @@ $base-text-indent: 15pt;
 
 $base-padding: $base-line-height * .375;
 
-$base-line-height-half: $base-line-height / 2;
-$base-line-height-dub: $base-line-height * 2;
+$base-half-line-space: $base-line-height / 2;
+$base-two-line-space: $base-line-height * 2; 
+$base-three-line-space: $base-line-height * 3;
 
 $base-font-size-dub: $base-font-size * 2;
 $base-font-size-trip: $base-font-size * 3;
@@ -36,7 +37,7 @@ body {
 @import 'partials/line/breaks';
 @import 'partials/line/editor';
 //changed
-@import 'partials/line/headings-masculine';
+@import 'partials/line/headings';
 @import 'partials/line/images';
 @import 'partials/line/initials';
 @import 'partials/line/links';
@@ -45,3 +46,4 @@ body {
 @import 'partials/line/notes';
 @import 'partials/line/paras';
 @import 'partials/line/toc';
+

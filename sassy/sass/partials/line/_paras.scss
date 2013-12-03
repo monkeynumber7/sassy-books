@@ -1,3 +1,31 @@
+
+
+.BM-TXT {
+	
+}
+/*remove indent for fist paragraph of all sub sections */
+
+.BMFIRST {
+	text-indent:0;
+	//margin-top: $base-line-height-dub;
+
+}
+.SIG {
+	text-align: right;
+	font-family: SAT_italic;
+}
+.SIDE {
+	color: gray;
+	line-height: 14pt;
+	float: left;
+	margin-left: -10px;
+	page-break-inside: avoid;
+	width: 150px;
+	text-align: left;
+	padding: 1em 1em 0 0;
+	font-family: SAT_semibold;
+	font-size: 11pt;
+}
 %base-text-para-ext {
 	font-family:SAT_regular, serif;
 	font-size:11pt;
@@ -11,48 +39,6 @@
 	text-indent:0px;
 	margin-bottom:16pt;
 	
-}
-
-.BM-TXT {
-	
-}
-/*remove indent for fist paragraph of all sub sections */
-
-.BMFIRST {
-
-	
-	text-indent:0;
-	margin-top: $base-line-height-dub;
-
-}
-
-.CPYINFO, #copyright p {
-
-	-webkit-hyphens:none;
-	color:Black;
-	font-family:SAT_regular, serif;
-	text-indent:0;
-	font-size:$base-font-size * .75;
-	line-height: $base-line-height * .75;
-	text-align:left;
-	margin-left:16pt;
-}
-
-.SIG {
-	text-align: right;
-	font-family: SAT_italic, italic;
-}
-.SIDE {
-	color: gray;
-	line-height: 14pt;
-	float: left;
-	margin-left: -10px;
-	page-break-inside: avoid;
-	width: 150px;
-	text-align: left;
-	padding: 1em 1em 0 0;
-	font-family: SAT_semibold;
-	font-size: 11pt;
 }
 .EXT {
 	@extend %base-text-para-ext;
@@ -69,21 +55,6 @@
 .EXTLs {
 	@extend %base-text-para-ext;
 	text-indent:12pt;
-}
-
-.DED {
-
-	hyphens:none;
-	font-family:SAT_italic;
-	font-size:1em;
-	font-style:normal;
-	font-variant:normal;
-	font-weight:normal;
-	line-height:1.2;
-	margin:0 0 0 0;
-	text-align:center;
-	text-decoration:none;
-	text-indent:0;
 }
 
 

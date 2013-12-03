@@ -2,7 +2,7 @@
 %base-heading {
 	-webkit-hyphens:none;
 	hyphens:none;
-	text-decoration:none;
+	
 	//change from center to left
 	display:block;
 	text-indent:0;
@@ -28,27 +28,28 @@
 	@extend %base-heading;
 }
 %title-next-sibling {
-	+ p { text-indent:0; margin-top:$base-line-height-dub;}
+	+ p { text-indent:0; margin-top: $base-two-line-space;}
 }
 %heading-next-sibling {
 	+ ol {margin-top:0;}
 	+ ul {margin-top:0;}
 	+ [class$="B"] {  margin-top: 0;}
 	+ [class$="C"]{	margin-top: 0;}
-	+ p { text-indent: 0;  margin-top: $base-line-height-dub;}
+	+ p { text-indent: 0;  margin-top: $base-two-line-space;}
 }
 /* title page title h1*/
 .TTLPGTTL {
 	@include base-font-heading($multiplyer:2.75);
 	}
+
 /* title page subtitle h3*/
 .TTLPGSUB {
-	@include base-font-heading('SAT_italic, italic',$multiplyer:1.7, $letter-spacing: .1em);
+	@include base-font-heading($font-family: 'SAT_italic, italic',$multiplyer:1.7, $letter-spacing: .1em);
 	
 }
 /* title page author h4*/
 .TTLPGAU {
-	@include base-font-heading($multiplyer:1.5, $margin-top: $base-line-height-trip);
+	@include base-font-heading($multiplyer:1.5, $margin-top: $base-three-line-space);
 	
 }
 .CONTRIB {
@@ -56,7 +57,7 @@
 }
 /* half title page title h1*/
 .HTTLPGTTL  {
-	@include base-font-heading($multiplyer:2.25, $margin-top: $base-line-height-trip);
+	@include base-font-heading($multiplyer:2.25, $margin-top: $base-three-line-space);
 
 }
 /* chapter title h2*/
@@ -66,16 +67,16 @@
 }
 /* chapter subtitle h3*/
 .CHAPSUB {
-	@include base-font-heading($margin-top:$base-line-height-dub);	
+	@include base-font-heading($margin-top:$base-two-line-space);	
 	@extend %title-next-sibling;
 }
 /* chapter number h6*/
 .CHAPNUM {
-	@include base-font-heading($font-family: SAT_semibold, $multiplyer:1.33, $margin-top:$base-line-height-trip);	
+	@include base-font-heading($font-family: SAT_semibold, $multiplyer:1.33, $margin-top:$base-three-line-space);	
 }
 /* part num */
 .PARTNUM {
-	@include base-font-heading($font-family: SAT_semibold, $multiplyer: 1.5, $margin-top:$base-line-height-trip);
+	@include base-font-heading($font-family: SAT_semibold, $multiplyer: 1.5, $margin-top:$base-three-line-space);
 
 }
 /* part title */
@@ -84,12 +85,12 @@
 }
 /* front matter title */
 .FMTTL {
-	@include base-font-heading($multiplyer: 1.5, $margin-top:$base-line-height-trip);
+	@include base-font-heading($multiplyer: 1.5, $margin-top:$base-three-line-space);
 
 }
 /* rear matter title */
 .RMTTL {
-	@include base-font-heading($multiplyer: 1.5, $margin-top:$base-line-height-trip);
+	@include base-font-heading($multiplyer: 1.5, $margin-top:$base-three-line-space);
 
 }
 /* a */
@@ -101,7 +102,7 @@ h4, [class$="A"] {
 
 /* b */
 h5, FMB, BMB, RMB, B {
-	@include base-font-heading('SAT_italic, serif', $margin-top: $base-line-height-dub);
+	@include base-font-heading('SAT_italic, serif', $margin-top: $base-two-line-space);
 	@extend %heading-next-sibling;
 
 }
